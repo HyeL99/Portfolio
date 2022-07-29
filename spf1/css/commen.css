@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  font-family: 'GowunDodum-Regular';
+}
+button{
+  cursor: pointer;
+}
+h2{
+  font-size: 24px;
+  font-weight: 700;
+  
+}
+
+::selection{
+  background: #009752;
+  color:white;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.fCol {
+  flex-direction: column;
+}
+.jusCen {
+  justify-content: center;
+}
+.jusSpaBet {
+  justify-content: space-between;
+}
+.alnCen {
+  align-items: center;
+}
+.alnEnd {
+  align-items: flex-end;
+}
+.jusEnd {
+  justify-content: flex-end;
+}
+.fWrap {
+  flex-wrap: wrap;
+}
+
+/* commen */
+.inner {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1360px;
+}
+.innerUl{
+  display: none;
+}
+
+.social {
+  margin-top: 10px;
+}
+.social .like::before {
+  content:"♡";
+  height: 15x;
+  width: 15x;
+}
+.social .like:hover::before{
+  color:red;
+}
+.social .comment{
+  padding-left:20px;
+  margin-left:20px;
+  position: relative;
+}
+.social .comment::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width:16px;
+  height:16px;
+  background: url("../img/chat.svg") no-repeat center / contain;
+  top: calc(50% - 8px);
+  left: 0;
+}

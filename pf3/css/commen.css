@@ -1,0 +1,168 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* commen */
+::selection{
+  background-color: #c0c5f1;
+  color:white;
+}
+
+body {
+  background: #eeeeee;
+  font-family: "Pretendard";
+  text-align: center;
+  font-weight: 300;
+}
+.h1{
+  font-size: 2em;
+  font-weight: 700;
+}
+.h2 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 2;
+}
+.h3 {
+  font-size: 31px;
+  font-weight: 700;
+}
+.h4 {
+  font-size: 27px;
+  font-weight: 900;
+}
+.h5 {
+  font-size: 20px;
+  font-weight: 700;
+    color: rgba(125,125,125,0.5);
+}
+.h6 {
+  font-size: 0.75em;
+  font-weight: 700;
+}
+input {
+  outline: none;
+  border: 0px;
+  font-family: "Pretendard";
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: transparent;
+}
+
+/* class */
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+.hide{
+  display:none;
+}
+.padding100{
+  padding: 100px 0;
+}
+.paddingBottom100{
+  padding-bottom: 100px;
+}
+
+.view{
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+.view::after{
+  content:"";
+  display: inline-block;
+  width: 30px;
+  height:30px;
+  background: url("../img/allow-long.svg") no-repeat center/contain;
+  vertical-align: -5px;
+  margin-left: 15px;
+}
+.view::before{
+  content:"";
+  position: absolute;
+  display: block;
+  width:40px;
+  height: 40px;
+  background: url("../img/hexagon.svg") no-repeat center/contain;
+  right: -19px;
+  top:-16px;
+  z-index: -1;
+  transform-origin: 40% 40%;
+  display:none;
+}
+.view:hover::before{
+  animation: rotateAni 3s linear infinite;
+  display: block;
+}
+@keyframes rotateAni{
+  0%{
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.fCol {
+  flex-direction: column;
+}
+.jusCen {
+  justify-content: center;
+}
+.jusSpaBet {
+  justify-content: space-between;
+}
+.jusSpaAnd{
+  justify-content: space-around;
+}
+.alnStr{
+  align-items: flex-start;
+}
+.alnCen {
+  align-items: center;
+}
+.alnEnd {
+  align-items: flex-end;
+}
+.jusEnd {
+  justify-content: flex-end;
+}
+.fWrap {
+  flex-wrap: wrap;
+}
+
+.textCen{
+  text-align: center;
+}
+.textStr{
+  text-align: start;
+}

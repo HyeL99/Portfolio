@@ -1,0 +1,82 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header a {
+  color:white;
+}
+header .inner {
+  height: 100px;
+  padding-top: 25px;
+  align-items: flex-end;
+  /*! background: gray; */
+  padding-bottom: 25px;
+  position: relative;
+}
+header .inner h1 {
+  position: absolute;
+  width: 330px;
+  left: calc(50% - 165px);
+  /*! text-align: center; */
+  /*! order: 2; */
+}
+header .inner h1 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 23px;
+}
+
+header .inner h1 img{
+  transform: translateY(-10px);
+}
+header .inner ul.gnb {
+  display: none;
+}
+header .inner ul.gnb li {
+}
+header .inner ul.gnb li h2 {
+}
+header .inner ul.gnb li h2 a {
+}
+header .inner ul.gnb li ul.gnbsub {
+}
+header .inner ul.gnb li ul.gnbsub li {
+}
+header .inner ul.gnb li ul.gnbsub li a {
+}
+header .inner .wgnb{
+  order: 1;
+}
+header .inner .wgnb a.ham{
+  
+  font-size: 0;
+  width: 36px;
+  height: 28px;
+  display: block;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+header .inner .wgnb a.ham::before{
+  content: "";
+  display: block;
+  height: 1px;
+  border-top: 4px solid;
+  flex-grow: 1;
+/*   자식요소에게 주면 빈공간을 메울만큼 크기가 늘어남 */
+}
+header .inner .enb{
+  order: 3;
+}
+header .inner .enb li{
+  margin-left: 30px;
+}
+header .inner .enb li a{
+
+}

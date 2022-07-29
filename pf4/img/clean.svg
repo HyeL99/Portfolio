@@ -1,0 +1,9 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+    <style type="text/css">
+        .st0{fill:none;stroke:#222222;stroke-width:4;stroke-miterlimit:10;}
+    </style>
+    <path class="st0" d="M50,15.9V0 M50,84.2V100" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+    <path class="st0" d="M15.9,50H0 M84.2,50H100" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+    <path class="st0" d="M25.9,25.9L14.6,14.6 M74.2,74.2l11.2,11.2" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+    <path class="st0" d="M25.9,74.2L14.6,85.4 M74.2,25.9l11.2-11.2" style="stroke-dashoffset: 0.00001px; stroke-dasharray: none;"></path>
+</svg>

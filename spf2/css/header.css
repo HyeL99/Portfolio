@@ -1,0 +1,79 @@
+header {
+  padding-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   background: darkblue;
+  
+  position: fixed;
+  width: 100%;
+  }
+header h1 a {
+    background: url("../img/logo-white.svg") no-repeat center/contain;
+  }
+  header h1 a {
+    color: transparent;
+    font-size: 4vw;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header ul li {
+    padding-left: 6vw;
+    height: 2.5vw;
+  }
+header ul li:hover a {
+    color: aqua;
+  }
+  header ul li a {
+    color: white;
+    font-size: 2vw;
+  }
+  header ul li div.menu {
+    position:relative;
+    width: 2.5vw;
+    height: 100%;
+
+/*     transform: translateY(-50%); */
+  }
+header ul li:hover div.menu span {
+    background-color: aqua;
+  }
+header ul li:hover div.menu span::before {
+    background-color: aqua;
+  }
+header ul li:hover div.menu span::after {
+    background-color: aqua;
+  }
+header ul li div.menu span{
+  position:absolute;
+  display: block;
+  width: 3vw;
+  height: 0.3vw;
+  background: white;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
+}
+header ul li div.menu span::before{
+  content:"";
+  width: 3vw;
+  height: 0.2vw;
+  background-color: white;
+  margin-bottom: 68px;
+  position: absolute;
+  left: 0;
+  top: -1vw;
+}
+header ul li div.menu span::after{
+  content:"";
+  width: 3vw;
+  height: 0.2vw;
+  background-color: white;
+  margin-bottom: 68px;
+  position: absolute;
+  left: 0;
+  top: 1vw;
+}

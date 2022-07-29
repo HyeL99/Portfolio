@@ -1,0 +1,208 @@
+section {
+  margin-top: 100px;
+}
+#daily {
+}
+#daily h2 {
+  margin-bottom: 30px;
+}
+#daily div.dailyCardSpace {
+}
+#daily div.dailyCardSpace article.dailyCard {
+  width: calc(100% / 4 - 10px);
+}
+#daily div.dailyCardSpace article.dailyCard a {
+}
+#daily div.dailyCardSpace article.dailyCard a::before {
+}
+
+#daily div.dailyCardSpace article.dailyCard a p {
+  position: relative;
+  padding-top: 110%;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#daily div.dailyCardSpace article.dailyCard a p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding-top: 100%;
+  background: url("../img/daily1.jpg") no-repeat center / cover;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+#daily div.dailyCardSpace article.dailyCard:hover a p::before {
+  background: url("../img/daily1.jpg") no-repeat center / 150%;
+}
+#daily div.dailyCardSpace article.dailyCard:nth-of-type(2):hover a p::before {
+  background: url("../img/daily2.jpg") no-repeat center / 120%;
+}
+#daily div.dailyCardSpace article.dailyCard:nth-of-type(3):hover a p::before {
+  background: url("../img/daily3.jpg") no-repeat center / 150%;
+}
+#daily div.dailyCardSpace article.dailyCard:nth-of-type(4):hover a p::before {
+  background: url("../img/daily4.jpg") no-repeat center / 110%;
+}
+#daily div.dailyCardSpace article.dailyCard:nth-of-type(2) a p::before {
+  background: url("../img/daily2.jpg") no-repeat center / cover;
+}
+#daily div.dailyCardSpace article.dailyCard:nth-of-type(3) a p::before {
+  background: url("../img/daily3.jpg") no-repeat center / cover;
+}
+#daily div.dailyCardSpace article.dailyCard:nth-of-type(4) a p::before {
+  background: url("../img/daily4.jpg") no-repeat center / cover;
+}
+#daily div.dailyCardSpace article.dailyCard div.social {
+}
+#daily div.dailyCardSpace article.dailyCard div.social div.like {
+}
+#daily div.dailyCardSpace article.dailyCard div.social div.comment {
+}
+
+#question {
+}
+#question h2 {
+}
+#question a {
+}
+#question a article.cookCard {
+}
+#question a article.cookCard p {
+}
+#question a article.cookCard div.social {
+}
+#question div.questionList {
+}
+#question div.questionList article.questionCard {
+}
+#question div.questionList article.questionCard h3 {
+}
+#question div.questionList article.questionCard div.social {
+}
+
+#recipe {
+}
+#recipe h2 {
+  margin-bottom: 30px;
+}
+#recipe div.recipeCardPlace {
+}
+#recipe div.recipeCardPlace article.recipeCard {
+  width: calc(100% / 4 - 10px);
+  margin-bottom: 60px;
+}
+#recipe div.recipeCardPlace article.recipeCard a {
+}
+#recipe div.recipeCardPlace article.recipeCard a h3 {
+  position: relative;
+  padding-top: 110%;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#recipe div.recipeCardPlace article.recipeCard a h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding-top: 100%;
+  background: url("../img/recipe1.jpg") no-repeat center / cover;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+#recipe div.recipeCardPlace article.recipeCard:hover a h3::before {
+  background: url("../img/recipe1.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard:nth-of-type(2) a h3::before {
+  background: url("../img/recipe2.jpg") no-repeat center / cover;
+}
+#recipe
+  div.recipeCardPlace
+  article.recipeCard:nth-of-type(2):hover
+  a
+  h3::before {
+  background: url("../img/recipe2.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard:nth-of-type(3) a h3::before {
+  background: url("../img/recipe3.jpg") no-repeat center / cover;
+}
+#recipe
+  div.recipeCardPlace
+  article.recipeCard:nth-of-type(3):hover
+  a
+  h3::before {
+  background: url("../img/recipe3.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard:nth-of-type(4) a h3::before {
+  background: url("../img/recipe4.jpg") no-repeat center / cover;
+}
+#recipe
+  div.recipeCardPlace
+  article.recipeCard:nth-of-type(4):hover
+  a
+  h3::before {
+  background: url("../img/recipe4.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard:nth-of-type(5) a h3::before {
+  background: url("../img/recipe5.jpg") no-repeat center / cover;
+}
+#recipe
+  div.recipeCardPlace
+  article.recipeCard:nth-of-type(5):hover
+  a
+  h3::before {
+  background: url("../img/recipe5.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard:nth-of-type(6) a h3::before {
+  background: url("../img/recipe6.jpg") no-repeat center / cover;
+}
+#recipe
+  div.recipeCardPlace
+  article.recipeCard:nth-of-type(6):hover
+  a
+  h3::before {
+  background: url("../img/recipe6.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard:nth-of-type(7) a h3::before {
+  background: url("../img/recipe7.jpg") no-repeat center / cover;
+}
+#recipe
+  div.recipeCardPlace
+  article.recipeCard:nth-of-type(7):hover
+  a
+  h3::before {
+  background: url("../img/recipe7.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard:nth-of-type(8) a h3::before {
+  background: url("../img/recipe8.jpg") no-repeat center / cover;
+}
+#recipe
+  div.recipeCardPlace
+  article.recipeCard:nth-of-type(8):hover
+  a
+  h3::before {
+  background: url("../img/recipe8.jpg") no-repeat center / 120%;
+}
+#recipe div.recipeCardPlace article.recipeCard a p {
+  font-size: 14px;
+  padding-top: 4px;
+}
+#recipe div.recipeCardPlace article.recipeCard div.social {
+}
+#recipe div.recipeCardPlace article.recipeCard div.social div.like {
+}
+#recipe div.recipeCardPlace article.recipeCard div.social div.comment {
+}
+
+#event {
+  margin-top: 40px;
+}
+#event h2 {
+  margin-bottom: 30px;
+}
+#event article.eventCard {
+}
+#event article.eventCard h3 {
+}

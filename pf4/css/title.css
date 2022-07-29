@@ -1,0 +1,169 @@
+#title {
+
+  color:white;
+}
+#title::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top:0;
+  width: calc(0.8 * (100% - 150px));
+  height: 944px;
+  background: black;
+  z-index: -1;
+}
+#title div.inner {
+  margin-top: 210px;
+  width:80%;
+  height: 734px;
+  background: black;
+  position: relative;
+  text-align: start;
+}
+#title div.inner div.timeBar {
+}
+
+/* #title div.inner h2 {
+  z-index: 1;
+  line-height: 2;
+  animation: titleTextAni 1s 0.1s ease-out;
+  animation-fill-mode: both;
+  height: 60px;
+} */  /*ver.1: clip-path: polygon()으로 텍스트를 자르는 방법*/
+
+#title div.inner h2 {
+  z-index: 1;
+  overflow: hidden; 
+  height: 60px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+#title div.inner h2 span{
+  display: block;
+  width: 100%;
+  height: 87px;
+  z-index: 1;
+  animation: titleTextAni-re 1s 0.1s ease-out;
+  animation-fill-mode: both;
+} /*ver.2 : overflow:hidden으로 텍스트를 자르는 방법*/
+#title div.inner>p {
+  z-index:1;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 500;
+  animation: titleTextAni 0.7s 0.4s ease-out;
+  animation-fill-mode: both;
+}
+@keyframes titleTextAni{
+  0%{
+    transform: translateY(100%);
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes titleTextAni-re{
+  0%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+#title div.inner a {
+  
+}
+#title div.inner iframe.video {
+  position: absolute;
+  height: 734px;
+  width:1288px;
+  right:0;
+  bottom:0;
+  transform: translateX(1px);
+}
+#title div.inner div.deco {
+  position: absolute;
+  right:-8%;
+  top:32%;
+  transform: translateX(5%);
+  width: 4%;
+  text-align: center;
+}
+#title div.inner div.deco a {
+  display: block;
+  transform-origin: center;
+  transform: rotate(90deg);
+  font-size: 15px;
+  font-weight: 700;
+  color: #aaa;
+  white-space: nowrap;
+}
+#title div.inner div.deco a:hover{
+  color: #000;
+}
+#title div.inner div.deco p {
+  display: block;
+  width:100%;
+  font-size: 12px;
+  color:black;
+  transform: translateY(2000%);
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+#title div.inner div.deco p::before {
+  content:"";
+  position: absolute;
+  display: block;
+  width:5px;
+  height:5px;
+  border: 2.5px solid black;
+  border-top:transparent;
+  border-left: transparent;
+  top:0px;
+  left:50%;
+  margin: 0 auto;
+  transform-origin: center;
+  transform: translateX(-50%) translateY(-25px) rotate(45deg);
+  animation: scrollAni 2s 0.2s ease-in-out infinite;
+}
+#title div.inner div.deco p::after {
+  content:"";
+  position: absolute;
+  display: block;
+  width:5px;
+  height:5px;
+  border: 2.5px solid #aaa;
+  border-top:transparent;
+  border-left: transparent;
+  top:0;
+  left:50%;
+  margin: 0 auto;
+  transform-origin: center;
+  transform: translateX(-50%) translateY(-35px) rotate(45deg);
+  animation: scrollAni 2s ease-in-out infinite;
+}
+@keyframes scrollAni{
+  0%{
+    opacity: 0;
+  }
+  45%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

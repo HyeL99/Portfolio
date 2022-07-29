@@ -1,0 +1,88 @@
+header {
+  border-bottom:1px solid rgba(125,125,125,0.2);
+}
+header div.inner {
+  margin: 10px auto;
+}
+header div.inner h1 {
+}
+header div.inner h1 a {
+  display: block;
+  font-size: 0;
+  width: 100px;
+  height: 80px;
+  background: url("../img/logo.svg") no-repeat center/contain;
+}
+header div.inner nav {
+}
+header div.inner nav ul {
+}
+header div.inner nav ul li {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+header div.inner nav ul li a {
+}
+header div.inner nav ul li a:hover {
+  color: #009752
+}
+header div.inner nav ul li:nth-of-type(5) a::before {
+  content: "";
+  display: inline-block;
+  width: 63px;
+  height: 31px;
+  background: url("../img/wow.svg") no-repeat center/100%;
+  vertical-align: -9px;
+}
+header div.inner nav ul li:nth-of-type(5):hover a::before {
+  animation: wowAni 0.2s ease-out;
+}
+@keyframes wowAni{
+  0%{
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+  }
+}
+header div.inner nav ul li ul.innerUl {
+}
+header div.inner nav ul li ul.innerUl li {
+}
+header div.inner nav ul li ul.innerUl li a {
+}
+header div.inner ul.menu {
+}
+header div.inner ul.menu li {
+}
+header div.inner ul.menu li a {
+  display: block;
+  margin-left: 20px;
+  background: url("../img/search.svg") no-repeat center/contain;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+}
+header div.inner ul.menu li:last-child a {
+  background: url("../img/person.svg") no-repeat center/contain;
+}
+header div.inner ul.menu li:hover a{
+  background: url("../img/search-green.svg") no-repeat center/contain;
+}
+header div.inner ul.menu li:last-child:hover a{
+  background: url("../img/person-green.svg") no-repeat center/contain;
+}
+header div.inner ul.menu li ul.innerUl {
+}
+header div.inner ul.menu li ul.innerUl li {
+}
+header div.inner ul.menu li ul.innerUl li a {
+}
+
+/* fixed-button */
+div.fixedButton {
+}
+div.fixedButton a {
+}

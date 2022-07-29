@@ -1,0 +1,230 @@
+header {
+position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+/*     border: 1px solid red; */
+    z-index: 1;
+    /*! background: rgba(255,255,255,0.5); */
+}
+header div.inner {
+    width:100%;
+}
+header div.inner div.top-box {
+/*     border-bottom: 1px solid lightgray; */
+    padding: 5px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+header div.inner div.top-box a {
+    font-size: 12px;
+    display: flex;
+    margin-left: 20px;
+}
+header div.inner div.top-box a::after {
+    content:"";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/open.svg") no-repeat center/contain;
+    display: flex;
+}
+header div.inner div.header-box {
+    position: relative;
+    padding: 20px 5%;
+    border-top: 1px solid #ddd;
+/*! border-bottom:1px solid #ddd; */
+}
+header div.inner div.header-box h1 {
+    font-size: 40px;
+    align-self: flex-start;
+}
+header div.inner div.header-box h1 a {
+    background: url("../img/logo-pc.png") no-repeat center/contain;
+    color: transparent;
+}
+header div.inner div.header-box nav {
+}
+header div.inner div.header-box nav ul {
+    /*! margin-top: 12px; */
+}
+header div.inner div.header-box nav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 106px;
+    background: rgb(255,255,255,0);
+    left:0;
+    top:-26px;
+    z-index: -1;
+}
+header div.inner div.header-box nav:hover::before{
+    height: 390px;
+    background: rgb(255,255,255,1);
+    transition-duration: 0.5s;
+}
+header div.inner div.header-box nav:hover::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgb(125,125,125,0.5);
+    left:0;
+    top:79px;;
+}
+header div.inner div.header-box nav>ul>li {
+    margin: 0 30px;
+    position:relative;
+    align-self: flex-start;
+    padding-top: 12px;
+}
+header div.inner div.header-box nav:hover>ul>li {
+    padding-bottom: 296px;
+    transition: 0.5s;
+}
+header div.inner div.header-box nav>ul>li>h2 a {
+    display: flex;
+    position:relative;
+    font-family: "Pretendard";
+    font-weight: 300;
+    font-size: 16px;
+}
+header div.inner div.header-box>nav>ul>li>h2 a::before {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    bottom:-33px;
+    width: 40px;
+    height: 2px;
+    border-radius: 4px;
+    background: red;
+    z-index: 1;
+}
+header div.inner div.header-box>nav>ul>li:hover>h2 a::before {
+    display: block;
+    transform: translateX(-50%) scale(1);
+    transition: 0.5s
+}
+header div.inner div.header-box>nav>ul>li>h2 a::after {
+    content:"";
+    display: none;
+    position: absolute;
+    right: -6px;
+    top:-6px;
+    width: 5px;
+    height: 5px;
+    border-radius: 4px;
+    background: red;
+}
+header div.inner div.header-box nav>ul>li:hover>a {
+    color:red;
+}
+header div.inner div.header-box nav>ul>li:hover a::after {
+    display:block;
+}
+header div.inner div.header-box nav>ul>li>ul.gnbsub{
+    display: block;
+    position: absolute;
+    left:0;
+    top:71px;
+    width: 100%;
+    text-align: start;
+    font-size: 14px;
+    transform: scale(0);
+    opacity: 0;
+}
+header div.inner div.header-box nav:hover>ul>li>ul.gnbsub{
+    float: 1;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 0.2s 0.5s ease-in;
+}
+header div.inner div.header-box nav>ul>li>ul.gnbsub li{
+    white-space:nowrap;
+    padding: 7px 0;
+}
+header div.inner div.header-box nav>ul>li>ul.gnbsub li a{
+}
+header div.inner div.header-box nav>ul>li>ul.gnbsub li:hover a{
+    color:red;
+    transition-duration: 0.2s;
+}
+header div.inner div.header-box ul.menu {
+    align-self: flex-start;
+}
+header div.inner div.header-box ul.menu li {
+    margin-left: 20px;
+    height: 17px;
+    padding: 8px 0;
+}
+header div.inner div.header-box ul.menu li select {
+    width: 40px;
+    background: transparent;
+    border: none;
+    appearance: none;
+    background: url("../img/drop_down.svg") no-repeat right/contain;
+}
+header div.inner div.header-box ul li select option {
+}
+header div.inner div.header-box ul.menu li {
+    position: relative;
+}
+header div.inner div.header-box ul.menu li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/menu-outline-black.svg") no-repeat center/contain;
+    font-size: 0;
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+header div.inner div.header-box ul.menu li a:hover {
+    background: url("../img/menu-outline-red.svg") no-repeat center/contain;
+}
+/* header div.inner div.sub {
+    width:32%;
+    margin: 0 auto;
+    padding-right: 40px;
+}
+header div.inner div.sub ul {
+}
+header div.inner div.sub ul li {
+}
+header div.inner div.sub ul li a {
+} */
+/* fixed-button */
+aside {
+    position: fixed;
+    bottom:15px;
+    right:15px;
+}
+aside a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: white;
+    text-align: center;
+    line-height: 4.75;
+    margin-top: 5px;
+    box-shadow: 0 0 7px 0 rgba(125,125,125,0.5);
+    font-size: 11px;
+    font-weight: 700;
+}
+aside a:last-child {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #1b1b1b;
+    color:white;
+    text-align: center;
+    line-height: 2.75;
+    margin-top: 5px;
+    font-size: 19px;
+    box-shadow: 0 0 10px rgba(125, 125, 125, 0.7);
+}
