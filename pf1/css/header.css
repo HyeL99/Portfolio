@@ -38,6 +38,7 @@ header div.inner div.header-box {
 header div.inner div.header-box h1 {
     font-size: 40px;
     align-self: flex-start;
+    white-space: nowrap;
 }
 header div.inner div.header-box h1 a {
     background: url("../img/logo-pc.png") no-repeat center/contain;
@@ -155,7 +156,7 @@ header div.inner div.header-box ul.menu {
     align-self: flex-start;
 }
 header div.inner div.header-box ul.menu li {
-    margin-left: 20px;
+    margin-left: 44px;
     height: 17px;
     padding: 8px 0;
 }
@@ -178,7 +179,7 @@ header div.inner div.header-box ul.menu li a {
     background: url("../img/menu-outline-black.svg") no-repeat center/contain;
     font-size: 0;
     position: absolute;
-    left:0;
+    right:0;
     top:50%;
     transform: translateY(-50%);
 }

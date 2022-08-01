@@ -9,6 +9,10 @@
   font-style: normal;
 }
 /* commen */
+::selection{
+  background: black;
+  color:white;
+}
 body {
   background: #f8fbfd url("../img/background.png") no-repeat top/100%;
   font-family: "Pretendard";

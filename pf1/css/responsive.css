@@ -1,0 +1,230 @@
+@media screen and (max-width:1200px){
+  header div.inner div.header-box {
+    flex-wrap: wrap;
+  }
+  header div.inner div.header-box nav ul{
+    justify-content: center;
+  }
+  header div.inner div.header-box h1{
+    order: 1;
+  }
+  header div.inner div.header-box nav{
+    order:3;
+    width: 100%;
+    justify-content: center;
+  }
+  header div.inner div.header-box ul.menu{
+    order:2;
+  }
+  header div.inner div.header-box nav:hover::before{
+    height: 419px;
+  }
+  header div.inner div.header-box nav:hover::after{
+    top: 119px;
+  }
+  header div.inner div.header-box nav::before{
+    height: 126px;
+  }
+  #taste h2 {
+    margin-bottom: 42%;
+  }
+  #taste ul{
+    flex-wrap: wrap;
+  }
+  #taste ul li{
+    width: calc(100% / 3);
+  }
+  #taste ul li:nth-of-type(1),
+  #taste ul li:nth-of-type(2),
+  #taste ul li:nth-of-type(3) {   
+    margin-bottom:37%;
+  }
+  #brand h2 {
+    margin-bottom: 7%;
+  }
+  #brand ul{
+    flex-wrap: wrap;
+  }
+  #brand ul li{
+    width: calc(100% / 3);
+  }
+  #brand ul li:nth-of-type(1),
+  #brand ul li:nth-of-type(2),
+  #brand ul li:nth-of-type(3) {
+    margin-bottom: 7%;
+  }
+   #service article.fnq ul li{
+    width: 100%
+  }
+  #title div.inner div.input-space {
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(125, 125, 125, 0.7);
+    padding: 5px;
+    border-radius: 40px;
+    margin-top:50px;
+  }
+  #title div.inner div.input-space input {
+    width: 80%;
+    height: 36px;
+    margin-left: 10px;
+  }
+  #title div.inner div.input-space::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: 24px;
+  }
+  #title div.inner div.input-space a {
+    display: block;
+    width: 30%;
+    background-image: linear-gradient(to top, #ed1c24, #e0462e);
+    height: 40px;
+    font-size: 15px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 2.5;
+    color: white;
+    font-weight: 700;
+    min-width: 90px;
+  }
+}
+@media screen and (max-width:768px){
+  header div.inner div.header-box nav{
+  display: none;
+  }
+  header div.inner div.top-box{
+    display: none;
+  }
+  #title div.inner div.input-space {
+  width: 80%;
+  background: white;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(125, 125, 125, 0.7);
+  padding: 5px;
+  border-radius: 40px;
+  }
+  #title div.inner div.input-space input {
+    width: 80%;
+    height: 29px;
+    margin-left: 10px;
+  }
+  #title div.inner div.input-space::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: 24px;
+  }
+  #title div.inner div.input-space a {
+    display: block;
+    width: 30%;
+    background-image: linear-gradient(to top, #ed1c24, #e0462e);
+    height: 30px;
+    font-size: 15px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    font-weight: 700;
+    min-width: 90px;
+   }
+  #help {
+    flex-wrap: wrap;
+  }
+  #help article.card{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  #service div.card-space{
+    flex-wrap: wrap;
+  }
+  #service div.card-space article{
+    width:100%;
+    margin-bottom: 5%;
+  }
+  #taste ul{
+    flex-wrap: wrap;
+  }
+  #taste ul li{
+    width: calc(100% / 2);
+  }
+  #taste ul li:nth-of-type(1),
+  #taste ul li:nth-of-type(2),
+  #taste ul li:nth-of-type(3) {   
+    margin-bottom:59%;
+  }
+  
+  #brand ul li div:hover {
+    width: 90%;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 0px;
+    box-shadow: 0 0 5px rgba(125, 125, 125, 0.2);
+  }
+  #brand ul{
+    flex-wrap: wrap;
+  }
+  #brand ul li{
+    width:calc(100%/2);
+    margin-bottom: 7%;
+  }
+  #service article.fnq ul li{
+    width: 100%
+  }
+  #title div.inner ul.hash-place li a{
+    width: 15vw;
+    font-size:11px;
+    height: 50%;
+    line-height: 2;
+  }
+  #brand h2{
+    margin-top:100px;
+  }
+  #help{
+    margin-top:100px;
+  }
+  #taste h2{
+    margin-bottom: 55%;
+  }
+  footer div.inner div.f-top{
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div.inner div.f-top img{
+    width:30%;
+    margin-top: 20px;
+    order:2;
+  }
+  footer div.inner div.f-top div.f-rt{
+    order:1;
+    font-size: 12px;
+  }
+  footer div.inner div.f-top div.f-rt a:first-child{
+    margin-left: 0;
+  }
+  footer div.inner div.f-middle{
+    text-align: center;
+    font-size: 13px;
+  }
+  footer div.inner div.f-bottom{
+    flex-direction: column;
+    margin-top:70px;
+  }
+  footer div.inner div.f-bottom div.button-place{
+    order:1;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+    width: 50%;
+  }
+  footer div.inner div.f-bottom div.button-place>* {
+    margin-bottom:20px;
+  }
+  footer div.inner div.f-bottom p{
+    order:2;
+    align-self: flex-end;
+  }
+}

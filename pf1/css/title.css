@@ -45,7 +45,7 @@
   display: block;
   width: 30px;
   height: 30px;
-  background: url(../img/search_icon.png) no-repeat center left;
+  background: url(../img/search_icon.png) no-repeat center left / contain;
   margin: auto;
   margin-left: 20px;
 }
