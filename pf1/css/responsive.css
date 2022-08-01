@@ -176,9 +176,10 @@
   }
   #title div.inner ul.hash-place li a{
     width: 15vw;
-    font-size:11px;
+    font-size:10px;
     height: 50%;
     line-height: 2;
+    white-space: nowrap;
   }
   #brand h2{
     margin-top:100px;
