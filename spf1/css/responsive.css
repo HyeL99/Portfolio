@@ -1,0 +1,98 @@
+@media screen and (max-width:959px){
+  #title div.inner {
+    width: 100%;
+  }
+  header div.inner nav{
+    display: none;
+  }
+  header div.inner ul.menu li:nth-of-type(2){
+    display: none;
+  }
+  header div.inner ul.menu li:nth-of-type(3){
+  display: block;
+  }
+  #question article.cookCard {
+    width: 100%;
+    padding-bottom: calc(50% + 185px);
+    background: #fff url("../img/question-img.jpg") no-repeat center top /100%;
+  }
+  #question article.cookCard:hover{
+    background: #fff url("../img/question-img.jpg") no-repeat center top /120%;
+    transition-duration: 0.3s;
+  }
+  #question article.cookCard div.textArea{
+    width: calc(100% - 60px);
+    height: 125px;
+    right: 0;
+    top: auto;
+    bottom: 0px;
+    padding: 30px;
+  }
+  #question article.cookCard div.textArea h3 {
+    margin-bottom: 2%;
+  }
+  #question article.cookCard div.textArea div.social {
+    margin-bottom: 44px;
+  }
+  #question div.questionList {
+    row-gap: 10px;
+  }
+  #question div.questionList article.questionCard {
+    width: calc(100% / 2 - 15px);
+  }
+  #question div.questionList article.questionCard h3 {
+    margin-bottom: 13%;
+  }
+}
+
+@media screen and (max-width:719px){
+  #title div.inner div.carousel{
+    width:100%;
+    height:0;
+    padding-bottom:100%;
+    background: red;
+    position: relative;
+  }
+  #title div.inner div.carousel img{
+    position: absolute;
+    top:0;
+    left:0;
+    content: url(../img/title1-m.jpg);
+  }
+  #daily div.dailyCardSpace {
+    row-gap: 30px;
+  }
+  #daily div.dailyCardSpace article.dailyCard {
+    width: calc(100% / 2 - 10px);
+  }
+  #question div.questionList article.questionCard {
+    width: 100%
+  }
+  #question div.questionList article.questionCard h3 {
+    margin: 5%;
+    margin-bottom: 1%;
+  }
+  #question div.questionList article.questionCard div.social {
+    margin: 5%;
+  }
+  #recipe div.recipeCardPlace article.recipeCard {
+  width: calc(100% / 2 - 10px);
+  margin-bottom: 30px;
+  }
+  #event div.eventCardSpace{
+    row-gap: 30px;
+  }
+  #event div.eventCardSpace article.eventCard {
+    width: 100%;
+  }
+  footer div.inner div.f-top,
+  footer div.inner div.f-bottom ul{
+    display: none;
+  }
+  footer div.inner div.f-bottom {
+    justify-content: center;
+  }
+  footer div.inner div.f-bottom p {
+    padding-bottom : 100px;
+  }
+}

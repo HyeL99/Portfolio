@@ -57,6 +57,9 @@ header div.inner ul.menu {
 }
 header div.inner ul.menu li {
 }
+header div.inner ul.menu li:nth-of-type(3){
+  display: none;
+}
 header div.inner ul.menu li a {
   display: block;
   margin-left: 20px;
@@ -65,24 +68,44 @@ header div.inner ul.menu li a {
   height: 30px;
   font-size: 0;
 }
-header div.inner ul.menu li:last-child a {
+header div.inner ul.menu li:nth-of-type(2) a {
   background: url("../img/person.svg") no-repeat center/contain;
+}
+header div.inner ul.menu li:nth-of-type(3) a {
+  font-size: 0;
+  box-sizing: border-box;
+  background: none;
+  border-top: 2px solid black;
+  border-bottom : 2px solid black;
+  position: relative;
+  height: 28px;
+  margin-top: 2px;
+}
+header div.inner ul.menu li:nth-of-type(3) a::before{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height:2px;
+  border-top:2px solid black;
+  top: calc(50% - 1px);
 }
 header div.inner ul.menu li:hover a{
   background: url("../img/search-green.svg") no-repeat center/contain;
 }
-header div.inner ul.menu li:last-child:hover a{
+header div.inner ul.menu li:nth-of-type(2):hover a{
   background: url("../img/person-green.svg") no-repeat center/contain;
+}
+header div.inner ul.menu li:nth-of-type(3):hover a{
+  background: none;
+  border-color: #009752;
+}
+header div.inner ul.menu li:nth-of-type(3):hover a::before {
+  border-color: #009752;
 }
 header div.inner ul.menu li ul.innerUl {
 }
 header div.inner ul.menu li ul.innerUl li {
 }
 header div.inner ul.menu li ul.innerUl li a {
-}
-
-/* fixed-button */
-div.fixedButton {
-}
-div.fixedButton a {
 }

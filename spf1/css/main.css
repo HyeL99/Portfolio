@@ -1,10 +1,13 @@
+main{
+  position: relative;
+  width: 100%;
+}
 section {
   margin-top: 100px;
 }
 #daily {
 }
 #daily h2 {
-  margin-bottom: 30px;
 }
 #daily div.dailyCardSpace {
 }
@@ -65,27 +68,76 @@ section {
 }
 #question h2 {
 }
-#question a {
+#question article.cookCard {
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%;
+  background: #fff url("../img/question-img.jpg") no-repeat -20% bottom /80%;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
-#question a article.cookCard {
+#question article.cookCard:hover{
+  background: #fff url("../img/question-img.jpg") no-repeat -20% bottom /85%;
+  transition-duration: 0.3s;
 }
-#question a article.cookCard p {
+#question article.cookCard div.textArea{
+  width:40%;
+  height: calc(100% - 100px);
+  background: #f8f3f3;
+  position: absolute;
+  right:0;
+  top:0;
+  padding:50px;
 }
-#question a article.cookCard div.social {
+#question article.cookCard div.textArea h3 {
+  font-size: 17px;
+  font-weight: 700;  
+  margin-bottom: 30px;
+}
+#question article.cookCard div.textArea div.social {
+  margin-bottom: 100px;
+}
+#question article.cookCard div.textArea a{
+  background:white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+#question article.cookCard:hover div.textArea a{
+  background-color: black;
+  color:white;
 }
 #question div.questionList {
+  margin-top: 50px;
+  width: 100%;
 }
 #question div.questionList article.questionCard {
+  width: calc(100% / 4 - 20px);
+  /*! height: 0; */
+  /*! padding-bottom: calc(80% / 4 - 16px); */
+  background: url("../img/grid.jpg") no-repeat center / cover;
+  border: 5px solid #f0f0f0;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+#question div.questionList article.questionCard:hover{
+  transform: translateY(-5%);
+  transition-duration: 0.3s;
+  box-shadow: 0 10px 10px rgba(125,125,125,0.1);
 }
 #question div.questionList article.questionCard h3 {
+  margin: 10%;
+  margin-bottom: 24%;
 }
 #question div.questionList article.questionCard div.social {
+  margin: 10%;
+  /*! margin-top: 24%; */
 }
 
 #recipe {
 }
 #recipe h2 {
-  margin-bottom: 30px;
 }
 #recipe div.recipeCardPlace {
 }
@@ -198,11 +250,97 @@ section {
 
 #event {
   margin-top: 40px;
+  margin-bottom: 100px;
 }
 #event h2 {
-  margin-bottom: 30px;
+  margin-left: 70px;
+  position: relative;
 }
-#event article.eventCard {
+#event h2::before{
+  content:"";
+  display: block;
+  position: absolute;
+  left: -70px;;
+  bottom:50%;
+  transform: translateY(50%);
+  width: 60px;
+  height: 30px;
+  background: url("../img/wow.svg") no-repeat center /contain;
 }
-#event article.eventCard h3 {
+#event div.eventCardSpace {
+}
+#event div.eventCardSpace article.eventCard {
+  width: calc(100% / 3 - 10px);
+}
+#event div.eventCardSpace article.eventCard::before{
+  content:"";
+  display: block;
+  width:100%;
+  height: 0;
+  padding-bottom: 35%;
+  background: url("../img/event1.jpg") no-repeat center /cover;
+  border-radius: 15px;
+}
+#event div.eventCardSpace article.eventCard:hover::before{
+  background: url("../img/event1.jpg") no-repeat center /120%;
+}
+#event div.eventCardSpace article.eventCard:nth-of-type(2)::before{
+  background: url("../img/event2.jpg") no-repeat center /cover;
+}
+#event div.eventCardSpace article.eventCard:nth-of-type(2):hover::before{
+  background: url("../img/event2.jpg") no-repeat center /120%;
+}
+#event div.eventCardSpace article.eventCard:nth-of-type(3)::before{
+  background: url("../img/event3.jpg") no-repeat center /cover;
+}
+#event div.eventCardSpace article.eventCard:nth-of-type(3):hover::before{
+  background: url("../img/event3.jpg") no-repeat center /120%;
+}
+#event div.eventCardSpace article.eventCard h3 {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* fixed-button */
+div.fixedButton {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 51px;
+  height: 51px;
+  z-index: 1;
+}
+div.fixedButton a {
+  display: block;
+  position: relative;
+  width: 49px;
+  height: 49px;
+  background: white;
+  border-radius: 26px;
+  font-size: 0px;
+  border: 1px solid #9e9e9e;
+}
+div.fixedButton a::before {
+  content:"";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 24px;
+  background: #424242;
+  font-size: 30px;
+  z-index: 1;
+  left: calc(50% - 2px);
+  top: calc(50% - 12px);
+}
+div.fixedButton a::after {
+  content:"";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #424242;
+  border-left: 3px solid #424242;
+  font-size: 30px;
+  transform: translateX(24px) translateY(11px) rotate(45deg);
+  transform-origin: 0 0;
 }

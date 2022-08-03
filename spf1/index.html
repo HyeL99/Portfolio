@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
@@ -45,6 +46,9 @@
                         <li><a href="#">회원정보 수정</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#">전체메뉴보기</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -67,7 +71,7 @@
         <div class="inner">
             <section id="daily">
                 <h2>오늘의 부엌</h2>
-                <div class="dailyCardSpace flex jusSpaBet">
+                <div class="dailyCardSpace flex jusSpaBet fWrap">
                     <article class="dailyCard">
                         <a href="#">
                             <p>밥이 들어가지 않는 김라면 ^^</p>
@@ -124,22 +128,22 @@
             </section>
             <section id="question">
                 <h2>모든 고민, 요리 상담소에서 한큐에 해결!</h2>
-                <a>
-                    <article class="cookCard">
-                        <p>회사, 육아, 집안일로부터 찐! 퇴근한 후에 즐기는 어른의 맛</p>
+                <article class="cookCard">
+                    <div class="textArea">
+                        <h3>기분 전환을 위한 힐링 요리법</h3>
                         <div class="social flex">
                             <div class="like">
-                                6
+                                13
                             </div>
                             <div class="comment">
-                                3
+                                1
                             </div>
                         </div>
                         <a href="#">자세히보기</a>
-                    </article>
-                </a>
-                <div class="questionList flex jusSpaBet">
-                    <article class="questionCard">
+                    </div>
+                </article>
+                <div class="questionList flex jusSpaBet fWrap">
+                    <article class="questionCard flex fCol jusSpaBet">
                         <h3>불없이 하는 (밥반찬)요리가 있을까요?</h3>
                         <div class="social flex">
                             <div class="like">
@@ -150,7 +154,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="questionCard">
+                    <article class="questionCard flex fCol jusSpaBet">
                         <h3>삼계탕 속이 자꾸 빠져나와요ㅠ</h3>
                         <div class="social flex">
                             <div class="like">
@@ -161,7 +165,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="questionCard">
+                    <article class="questionCard flex fCol jusSpaBet">
                         <h3>저칼로리 음식을 만들고 싶어요</h3>
                         <div class="social flex">
                             <div class="like">
@@ -172,7 +176,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="questionCard">
+                    <article class="questionCard flex fCol jusSpaBet">
                         <h3>10살 아이가 잘 먹을수 있는 김치</h3>
                         <div class="social flex">
                             <div class="like">
@@ -304,41 +308,61 @@
             </section>
             <section id="event">
                 <h2>이벤트</h2>
-                <article class="eventCard">
-                    <h3>시작은 똥손이었으나 그 끝은 J.M.T 이리라!</h3>
-                </article>
-                <article class="eventCard">
-                    <h3>여름을 더 맛있게 보내는 방법!</h3>
-                </article>
-                <article class="eventCard">
-                    <h3>다양한 이벤트가 궁금하다면? 새미와 함께 요리해요!</h3>
-                </article>
+                <div class="eventCardSpace flex jusSpaBet fWrap">
+                    <article class="eventCard">
+                        <h3>시작은 똥손이었으나 그 끝은 J.M.T 이리라!</h3>
+                    </article>
+                    <article class="eventCard">
+                        <h3>여름을 더 맛있게 보내는 방법!</h3>
+                    </article>
+                    <article class="eventCard">
+                        <h3>다양한 이벤트가 궁금하다면? 새미와 함께 요리해요!</h3>
+                    </article>
+                </div>
             </section>
+        </div>
+        <div class="fixedButton">
+            <a href="#">상단이동버튼</a>
         </div>
     </main>
 
 
     <footer>
         <div class="inner">
-            <div class="f-top">
-                <ul>
+            <div class="f-top flex jusSpaBet alnCen">
+                <ul class="flex">
                     <li><a href="#">맛추억 문의</a></li>
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">개인정보처리방침</a></li>
                     <li><a href="#">1:1 문의</a></li>
                 </ul>
-                <select name="" id="">
-                    <option value="">샘표 기업</a></option>
-                    <option value="">새미네부엌 플랫폼</option>
-                    <option value="">티아시아 키친</option>
-                    <option value="">새미네 부엌</option>
-                    <option value="">폰타나</option>
-                    <option value="">샘표 채용</option>
-                    <option value="">샘표 통합회원 웹사이트</option>
-                </select>
+                <!-- <div class="selectBox">
+                    <select name="" id="">
+                        <option selected>관련사이트</option>
+                        <option value="">샘표 기업</a></option>
+                        <option value="">새미네부엌 플랫폼</option>
+                        <option value="">티아시아 키친</option>
+                        <option value="">새미네 부엌</option>
+                        <option value="">폰타나</option>
+                        <option value="">샘표 채용</option>
+                        <option value="">샘표 통합회원 웹사이트</option>
+                    </select>
+                </div> -->
+                <div class="selectBox" data-role="selectBox">
+                    <span class="selectedOption" date-value="optValue">관련사이트</span>
+                    <ul class="hide">
+                        <li><a href="">샘표 기업</a></li>
+                        <li><a href="">새미네부엌 플랫폼</a></li>
+                        <li><a href="">티아시아 키친</a></li>
+                        <li><a href="">새미네 부엌</a></li>
+                        <li><a href="">폰타나</a></li>
+                        <li><a href="">샘표 채용</a></li>
+                        <li><a href="">샘표 통합회원 웹사이트</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="f-bottom">
-                <ul>
+            <div class="f-bottom flex jusSpaBet">
+                <ul class="flex fWrap">
                     <li>샘표식품㈜</li>
                     <li>
                         <adress>주소: 서울특별시 중구 충무로2 (우편번호: 04557)</adress>
@@ -349,8 +373,6 @@
             </div>
         </div>
     </footer>
-    <div class="fixedButton">
-        <a href="#">↑</a>
-    </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
