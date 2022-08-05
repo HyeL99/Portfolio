@@ -19,6 +19,8 @@ body {
   font-family: "Pretendard";
   text-align: center;
   font-weight: 300;
+  overflow-x: hidden;
+  height: 1070px;
 }
 .h1{
   font-size: 2em;
@@ -82,44 +84,16 @@ textarea:focus:-ms-input-placeholder {
 .hide{
   display:none;
 }
+.block{
+  display: block;
+}
 .padding100{
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .paddingBottom100{
   padding-bottom: 100px;
 }
 
-.view{
-  font-size: 15px;
-  font-weight: 500;
-  position: relative;
-}
-.view::after{
-  content:"";
-  display: inline-block;
-  width: 30px;
-  height:30px;
-  background: url("../img/allow-long.svg") no-repeat center/contain;
-  vertical-align: -5px;
-  margin-left: 15px;
-}
-.view::before{
-  content:"";
-  position: absolute;
-  display: block;
-  width:40px;
-  height: 40px;
-  background: url("../img/hexagon.svg") no-repeat center/contain;
-  right: -19px;
-  top:-16px;
-  z-index: -1;
-  transform-origin: 40% 40%;
-  display:none;
-}
-.view:hover::before{
-  animation: rotateAni 3s linear infinite;
-  display: block;
-}
 @keyframes rotateAni{
   0%{
   }

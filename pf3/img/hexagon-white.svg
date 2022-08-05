@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{fill:#ffffff;}
 </style>
-<path class="st0" d="M36.8,30.5L34,29l6.7-3.9H0v-2.2h40.8L34.1,19l2.7-1.5L48,24L36.8,30.5z"/>
+<polygon class="st0" points="34.8,5.2 13.1,5.2 2.3,24.3 13.1,43.3 34.8,43.3 45.7,24.3 "/>
 </svg>

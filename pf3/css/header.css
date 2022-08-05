@@ -1,7 +1,7 @@
 header {
-  position: fixed;
+  position: sticky;
   width: 100%;
-  top: 0;
+  top: -30px;
   left: 0;
   z-index: 1;
 }
@@ -14,7 +14,7 @@ header .inner {
   align-items: flex-end;
   /*! background: gray; */
   padding-bottom: 25px;
-  position: relative;
+  width: 100%;
 }
 header .inner h1 {
   position: absolute;

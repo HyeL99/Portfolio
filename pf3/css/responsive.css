@@ -1,0 +1,340 @@
+@media screen and (max-width:1023px){
+    .h2 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 2;
+    }
+    .h4 {
+      font-size: 22px;
+      font-weight: 900;
+    }
+  #title::before {
+      /*! content: ""; */
+      /*! position: absolute; */
+      /*! left: 0; */
+      /*! top: 0; */
+      width: 100%;
+      height: 974px;
+      /*! background: black; */
+      /*! z-index: -1; */
+    }
+    header .inner {
+      width: 90%;
+    }
+    header .inner .enb li{
+        font-size: 0;
+    }
+    #title div.inner {
+        margin-top: 0px;
+        margin-right: 0;
+    }
+    #title div.inner iframe.video {
+      position: static;
+      height: 734px;
+      width:100%;
+      right:0;
+      bottom:0;
+      /*! transform: translateX(1px); */
+      order:1;
+    }
+    #title div.inner h2 {
+        order: 2;
+    }
+    #title div.inner>p{
+        order: 3;
+        font-size: 17px;
+    }
+    #title div.inner a{
+        order: 4;
+    }
+    #title div.inner div.deco a{
+        display: none;
+    }
+    #title div.inner div.deco p {
+      /*! display: block; */
+      /*! width:100%; */
+      /*! font-size: 12px; */
+      /*! color:black; */
+      transform: translateY(0px);
+      /*! font-weight: 700; */
+      /*! position: relative; */
+      /*! text-align: center; */
+      z-index: 1;
+    }
+    #title div.inner div.deco p::before {
+        border-color: #fff;
+    }
+    #title div.inner div.deco {
+      right: 10%;
+      top: 794px;
+    }
+    #service div.inner{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        position: relative;
+        padding-bottom: 0;
+    }
+    #service div.inner div.contents{
+        flex-wrap: nowrap;
+        
+        padding-bottom: 15%;
+        position: absolute;
+        left: 10%;
+        top: 300px;
+    }
+    #service div.inner div.contents article{
+      width: calc(100% / 3 - 100px);
+      flex-shrink: 0;
+        margin-right: calc(100px / 3);
+    }
+    #service div.inner div.contents article:nth-of-type(3n+1) {
+      transform: translateY(0%);
+    }
+    #service div.inner div.contents article:nth-of-type(3n+2) {
+      transform: translateY(0%);
+    }
+    #service div.inner div.contents article a p {
+        font-size: 16px;
+    }
+    #service div.inner hgroup {
+      margin-bottom: 526px;
+    }
+    #life div.inner h2 {
+        font-size: 80px;
+    }
+    #life div.inner div.banner {
+      width: 125%;
+      padding: 0;
+      height: auto;
+      background: url("../img/section2.jpg") no-repeat top/100%;
+    }
+    #life div.inner div.banner div.text {
+      position: relative;
+      padding-top: 54%;
+      /*! left: 44%; */
+      transform: translateX(-50%) translateY(0%);
+      color: #000;
+      z-index: 1;
+    }
+    #life div.inner div.banner div.text{
+        width: 90%;
+    }
+    #life div.inner div.banner div.text p{
+        white-space: normal;
+        display: block;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    #life div.inner div.banner div.text p br{
+        display: none;
+    }
+    #life div.inner div.banner div.text p span{
+        display: none;
+    }
+    #life div.inner div.banner::after {
+        display: none;
+    }
+    #life div.inner div.banner div.text a.view{
+        color: black;
+    }
+    #life div.inner div.banner div.text a.view::after {
+        background: url("../img/allow-long.svg") no-repeat center/contain;
+    }
+    #miele {
+      text-align: start;
+      background: url("../img/section4.jpg") no-repeat top / 100%;
+      width: 100%;
+      height: 100%;
+      color: white;
+      position: relative;
+      padding-bottom: 0;
+    }
+    #miele div.inner h2{
+        color: #000;
+    }
+    #miele div.inner {
+      position: relative;
+      padding-top: 53%;
+      transform: translateY(0%);
+      left: 0;
+      color: #000;
+      text-align: center;
+    }
+    #miele div.inner a.view{
+        color: #000;
+        z-index: 1;
+    }
+    #miele::before{
+        display: none;
+    }
+    #miele div.inner a.view::after {
+      background: url("../img/allow-long.svg") no-repeat center/contain;
+    }
+    #register{
+        margin-top: 0;
+    }
+    #register div.inner::before{
+      content:"";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: calc(50%);
+      background: #767c69;
+      top:-100px;
+      right: 0;
+      z-index: -1;
+    }
+    #register div.inner{
+        padding-top: 52%;
+        background: url("../img/section5.jpg") no-repeat top/60%;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    #register div.inner h3 {
+        font-size: 40px;
+        white-space: nowrap;
+    }
+    #register div.inner h3>br {
+        display: none;
+    }
+    #register div.inner p>br:last-child {
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .h5 {
+        font-size: 12px;
+    }
+    .h2{
+        font-size: 30px;
+    }
+    .h4{
+        font-size: 18px;
+    }
+    #title div.inner {
+      margin-top: 4px;
+      margin-right: 0;
+      height: 533px;
+    }
+    #title div.inner h2 {
+        font-size: 28px;
+        margin-bottom: 21px;
+        margin-top: 50px;
+        /*! padding-top: 50px; */
+    }
+    #title div.inner p{
+        font-size : 15px;
+    }
+    #title div.inner div.deco {
+      right: 10%;
+      top: 530px;
+    }
+      #title::before {
+      /*! content: ""; */
+      /*! top: 0; */
+      width: 100%;
+      height: 762px;
+      /*! background: black; */
+      /*! z-index: -1; */
+    }
+    #service div.inner div.contents {
+      font-size: 15px;
+      top: 253px;
+    }
+    #service div.inner div.contents article a p {
+      font-size: 15px;
+    }
+    #life div.inner {
+      margin-top: 100px;
+    }
+    #life div.inner div.banner div.text p {
+      font-size: 30px;
+    }
+    #story div.inner > p {
+        font-size: 18px;
+    }
+    #story div.inner ul {
+        flex-direction: column;
+        padding-top: 93px;
+        row-gap: 292px;
+    }
+    #story div.inner ul li{
+        padding-top: 50px;
+    }
+    #story div.inner ul li.storyCard h4::before {
+      width: 20%;
+      padding-bottom: 20%;
+    }
+    #story div.inner ul li.storyCard:nth-of-type(2) {
+        border: none;
+    }
+    #story div.inner ul li.storyCard > h4 {
+        font-size: 20px;
+    }
+    #story div.inner ul li.storyCard p {
+        font-size: 15px;
+    }
+    #register div.inner h3 {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+    #register div.inner h3 br:last-child {
+        display: block;
+    }
+    footer div.inner div.f-bottom > a{
+        position: absolute;
+        bottom:80px;
+        left: 10%;
+    }
+    footer div.inner div.f-bottom {
+        width: 100%;
+        padding-top: 0px;
+        border-top: 0px;
+        border-bottom:1px solid rgba(255,255,255,0.3);
+        font-size: 14px;
+        padding-bottom: 116px;
+        margin-bottom:49px;
+    }
+    footer div.inner div.f-top div.f-right {
+        
+    position: absolute;
+    bottom: 10px;
+    left: 6%;
+    bottom: 170px;
+    transform: scale(0.8);
+    }
+}
+@media screen and (max-width: 540px){
+    #instagram div.inner ul.instaCard li {
+      width: calc(100% / 2 - 20px);
+      height: 0;
+      padding-bottom: calc(100% / 2 - 10px);
+      position: relative;
+      margin-right: 20px;
+        
+      flex-shrink: 0;
+    }
+    #instagram div.inner ul.instaCard{
+        flex-wrap: nowrap;
+    }
+    footer div.inner div.f-bottom ul li a {
+        font-size: 11px;
+    }
+    footer div.inner div.f-top div.f-left > a {
+        font-size: 30px;
+    }
+    footer div.inner div.f-top div.f-left div.adress> * {
+        font-size: 11px;
+    }
+    footer div.inner div.f-bottom > a {
+        font-size: 10px;
+    }
+    footer div.inner div.f-top div.f-left p{
+        font-size: 12px;
+    }
+    footer div.inner div.f-top div.f-left ul{
+        font-size: 12px;
+    }
+    
+}

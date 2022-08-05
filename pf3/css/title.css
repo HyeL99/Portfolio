@@ -8,17 +8,19 @@
   left: 0;
   top:0;
   width: 80%;
-  height: 944px;
+  height: 1095px;
   background: black;
   z-index: -1;
 }
 #title div.inner {
   margin-top: 210px;
-  width:80%;
+  width:90%;
   height: 734px;
   background: black;
   position: relative;
   text-align: start;
+  margin-left: auto;
+  margin-right: 10%;
 }
 #title div.inner div.timeBar {
 }
@@ -87,15 +89,15 @@
   position: absolute;
   height: 734px;
   width:1288px;
-  right:0;
+  right:0%;
   bottom:0;
   transform: translateX(1px);
 }
 #title div.inner div.deco {
   position: absolute;
-  right:-8%;
-  top:32%;
-  transform: translateX(5%);
+  right:0;
+  top:0;
+  transform: translateX(-5%);
   width: 4%;
   text-align: center;
 }

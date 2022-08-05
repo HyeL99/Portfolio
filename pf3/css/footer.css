@@ -1,36 +1,154 @@
 footer {
+  background: #000;
+  color: white;
+  text-align: start;
+  position: relative;
+}
+footer::before{
+  content:"";
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 0;
+  padding-bottom:200px;
+  background: url("../img/logo-top.svg") no-repeat center /contain;
+  top: 50px;
+  right: calc(10% + 100px);
+  opacity: 0.3;
+}
+footer::after{
+  content:"URBAN LAUNDERETTE";
+  position: absolute;
+  display: block;
+  width: 375px;
+  height: 0;
+  padding-bottom:20%;
+  top: 125px;
+  right: calc(10% + 50px);
+  opacity: 0.3;
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  transform: rotate(15deg);
+  
+}
+footer a{
+  color:white;
 }
 footer div.inner {
+  padding: 80px 0;
 }
-footer div.inner p {
+footer div.inner div.f-top {
+  margin-bottom: 50px;
 }
-footer div.inner a {
+footer div.inner div.f-top div.f-left {
+  font-weight: 500;
+  width: 480px;
 }
-footer div.inner ul {
+footer div.inner div.f-top div.f-left p {
+  margin-bottom: 10px;
 }
-footer div.inner ul li {
+footer div.inner div.f-top div.f-left>a {
+  font-size: 45px;
 }
-footer div.inner ul li a {
+footer div.inner div.f-top div.f-left ul {
+  margin-top: 30px;
 }
-footer div.inner div.f-middle {
+footer div.inner div.f-top div.f-left ul li {
+  line-height: 1.5;
 }
-footer div.inner div.f-middle p {
+footer div.inner div.f-top div.f-left ul li a {
+  margin-left: 10px;
 }
-footer div.inner div.f-middle adress {
+footer div.inner div.f-top div.f-left div.adress {
+  font-weight: 300;
+  opacity: 0.6;
+  margin-top: 50px;
+  font-size: 14px;
 }
-footer div.inner div.f-middle ul.social {
+footer div.inner div.f-top div.f-left div.adress p {
+  margin-bottom: 7px;
+  margin-right: 15px;
 }
-footer div.inner div.f-middle ul.social li {
+footer div.inner div.f-top div.f-left div.adress adress {
+  margin-bottom: 7px;
 }
-footer div.inner div.f-middle ul.social li a {
+footer div.inner div.f-top div.f-right {
+  width: 180px;
+}
+footer div.inner div.f-top div.f-right ul.social {
+  height: 100%;
+}
+footer div.inner div.f-top div.f-right ul.social li {
+  
+}
+footer div.inner div.f-top div.f-right ul.social li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../img/logo-facebook.svg") no-repeat 50%/88%;
+  opacity: 0.3;
+  font-size: 0;
+}
+footer div.inner div.f-top div.f-right ul.social li:hover a {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+footer div.inner div.f-top div.f-right ul.social li:nth-of-type(2) a {
+  background: url("../img/logo-instagram.svg") no-repeat center/90%;
+}
+footer div.inner div.f-top div.f-right ul.social li:nth-of-type(3) a {
+  background: url("../img/logo-blog.svg") no-repeat center/110%;
 }
 footer div.inner div.f-bottom {
+  padding-top:80px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  font-size: 14px;
 }
 footer div.inner div.f-bottom ul {
 }
 footer div.inner div.f-bottom ul li {
+  margin-right: 40px;
+  opacity: 0.6;
+  position: relative;
+}
+footer div.inner div.f-bottom ul li:hover{
+  opacity: 1;
+  transition-duration: 0.3s;
+  font-weight: 700;
+}
+footer div.inner div.f-bottom ul li::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/hexagon-white.svg") no-repeat center/contain;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  left: calc(50% - 5px);
+  top: -50px;
+  opacity: 0
+}
+footer div.inner div.f-bottom ul li:hover::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url("../img/hexagon-white.svg") no-repeat center/contain;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  left: calc(50% - 5px);
+  top: -25px;
+  opacity:1;
+  transition-duration: 0.3s;
+}
+footer div.inner div.f-bottom ul li:first-child{
+  opacity: 1;
+  font-weight: 700;
 }
 footer div.inner div.f-bottom ul li a {
 }
-footer div.inner div.f-bottom a {
+footer div.inner div.f-bottom>a {
+  opacity: 0.6;
+  font-weight: 500;
 }
