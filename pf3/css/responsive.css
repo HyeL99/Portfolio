@@ -27,6 +27,7 @@
     #title div.inner {
         margin-top: 0px;
         margin-right: 0;
+        width: 90%;
     }
     #title div.inner iframe.video {
       position: static;
@@ -46,6 +47,9 @@
     }
     #title div.inner a{
         order: 4;
+    }
+    #title div.inner div.deco {
+        right: 0;
     }
     #title div.inner div.deco a{
         display: none;
@@ -203,6 +207,9 @@
     }
 }
 @media screen and (max-width:768px){
+    body{
+        height: 760px;
+    }
     .h5 {
         font-size: 12px;
     }
@@ -306,6 +313,11 @@
     }
 }
 @media screen and (max-width: 540px){
+    #title div.inner {
+      margin-top: 4px;
+      margin-right: 0;
+      height: 533px;
+    }
     #instagram div.inner ul.instaCard li {
       width: calc(100% / 2 - 20px);
       height: 0;
