@@ -1,8 +1,10 @@
 header {
   border-bottom:1px solid rgba(125,125,125,0.2);
+  height: 100px;
+  box-sizing: border-box;
 }
 header div.inner {
-  margin: 10px auto;
+  margin: 0px auto;
 }
 header div.inner h1 {
 }
@@ -14,20 +16,45 @@ header div.inner h1 a {
   background: url("../img/logo.svg") no-repeat center/contain;
 }
 header div.inner nav {
+  height: 100px;
 }
-header div.inner nav ul {
+header div.inner nav ul.gnb {
+  height: 100px;
 }
-header div.inner nav ul li {
-  margin: 0 20px;
+header div.inner nav ul.gnb>li {
+  padding: 0 20px;
   display: flex;
   align-items: center;
+  position: relative;
+  height: 100%;
 }
-header div.inner nav ul li a {
+header div.inner nav ul.gnb>li>a {
+  font-weight: 700;
+  transition: all 0.5s;
+  position: relative;
 }
-header div.inner nav ul li a:hover {
+header div.inner nav ul.gnb>li>a::after {
+  content:"";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top:-13px;
+  right: -12px;
+  background: url("../img/twinkle.svg");
+  transform: scale(0);
+  transition: all 0.5s;
+}
+header div.inner nav ul.gnb>li:hover>a::after {
+  transform: scale(1);
+}
+header div.inner nav ul.gnb li:nth-of-type(5) a::after{
+  top: -3px;
+}
+header div.inner nav ul.gnb>li:hover>a {
   color: #009752
 }
-header div.inner nav ul li:nth-of-type(5) a::before {
+header div.inner nav ul.gnb li:nth-of-type(5) a::before {
   content: "";
   display: inline-block;
   width: 63px;
@@ -35,7 +62,7 @@ header div.inner nav ul li:nth-of-type(5) a::before {
   background: url("../img/wow.svg") no-repeat center/100%;
   vertical-align: -9px;
 }
-header div.inner nav ul li:nth-of-type(5):hover a::before {
+header div.inner nav ul.gnb li:nth-of-type(5):hover a::before {
   animation: wowAni 0.2s ease-out;
 }
 @keyframes wowAni{
@@ -47,20 +74,87 @@ header div.inner nav ul li:nth-of-type(5):hover a::before {
   100%{
   }
 }
-header div.inner nav ul li ul.innerUl {
+header div.inner nav ul.gnb>li:nth-of-type(4)::before {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 68px;
+  left:-100vw;
+  width: 200vw;
+  height: 0px;
+  background: #fff;
+  border-bottom:1px solid rgba(125,125,125,0.2);
+  opacity: 0;
+  transition: all 0.3s;
 }
-header div.inner nav ul li ul.innerUl li {
+header div.inner nav ul.gnb>li:hover::before {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 100px;
+  left:-100vw;
+  width: 200vw;
+  height: 50px;
+  /*! background: red; */
+  border-bottom:1px solid rgba(125,125,125,0.2);
+  opacity: 1;
 }
-header div.inner nav ul li ul.innerUl li a {
+header div.inner nav ul.gnb li ul.gnbSub {
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+  left:50%;
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+  transition: opacity 0.3s 0.3s;
+}
+header div.inner nav ul.gnb li:hover ul.gnbSub {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+
+}
+header div.inner nav ul.gnb li ul.gnbSub>li {
+  margin: 0;
+  height: 51px;
+  padding-top: 17px;
+}
+header div.inner nav ul.gnb li ul.gnbSub li:nth-of-type(2) a {
+  border-left: 1px solid rgba(125,125,125,0.2);
+  border-right: 1px solid rgba(125,125,125,0.2);
+}
+header div.inner nav ul.gnb li ul.gnbSub>li>a {
+  padding: 0 10px;
+  white-space: nowrap;
+  position: relative;
+  color:#424242;
+  width: 100%;
+}
+header div.inner nav ul.gnb li ul.gnbSub>li>a::after {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-bottom: 2px solid #009252;
+  transition: all 0.5s;
+  left: 10px;
+}
+header div.inner nav ul.gnb li ul.gnbSub>li:hover>a {
+  color: #009752;
+}
+header div.inner nav ul.gnb li ul.gnbSub>li:hover>a::after {
+  width: calc(100% - 20px);
 }
 header div.inner ul.menu {
 }
-header div.inner ul.menu li {
+header div.inner ul.menu>li {
+  position:relative;
+  padding: 35px 0;
 }
-header div.inner ul.menu li:nth-of-type(3){
+header div.inner ul.menu>li:nth-of-type(3){
   display: none;
 }
-header div.inner ul.menu li a {
+header div.inner ul.menu>li>a {
   display: block;
   margin-left: 20px;
   background: url("../img/search.svg") no-repeat center/contain;
@@ -68,10 +162,10 @@ header div.inner ul.menu li a {
   height: 30px;
   font-size: 0;
 }
-header div.inner ul.menu li:nth-of-type(2) a {
+header div.inner ul.menu>li:nth-of-type(2)>a {
   background: url("../img/person.svg") no-repeat center/contain;
 }
-header div.inner ul.menu li:nth-of-type(3) a {
+header div.inner ul.menu>li:nth-of-type(3)>a {
   font-size: 0;
   box-sizing: border-box;
   background: none;
@@ -81,7 +175,7 @@ header div.inner ul.menu li:nth-of-type(3) a {
   height: 28px;
   margin-top: 2px;
 }
-header div.inner ul.menu li:nth-of-type(3) a::before{
+header div.inner ul.menu>li:nth-of-type(3) a::before{
   content:"";
   display: block;
   position: absolute;
@@ -90,22 +184,76 @@ header div.inner ul.menu li:nth-of-type(3) a::before{
   border-top:2px solid black;
   top: calc(50% - 1px);
 }
-header div.inner ul.menu li:hover a{
+header div.inner ul.menu>li:hover>a{
   background: url("../img/search-green.svg") no-repeat center/contain;
 }
-header div.inner ul.menu li:nth-of-type(2):hover a{
+header div.inner ul.menu>li:nth-of-type(2):hover>a{
   background: url("../img/person-green.svg") no-repeat center/contain;
 }
-header div.inner ul.menu li:nth-of-type(3):hover a{
+header div.inner ul.menu>li:nth-of-type(3):hover>a{
   background: none;
   border-color: #009752;
 }
-header div.inner ul.menu li:nth-of-type(3):hover a::before {
+header div.inner ul.menu>li:nth-of-type(3):hover>a::before {
   border-color: #009752;
 }
-header div.inner ul.menu li ul.innerUl {
+header div.inner ul.menu>li:nth-of-type(2)::before{
+  content:"";
+  display: block;
+  position: absolute;
+  top: 100px;
+  left:-100vw;
+  width: 200vw;
+  height: 0px;
+  background: #fff;
+  border-bottom:1px solid rgba(125,125,125,0.2);
+  opacity: 0;
+  transition: all 0.3s;
 }
-header div.inner ul.menu li ul.innerUl li {
+header div.inner ul.menu li:nth-of-type(2):hover::before{
+  height: 50px;
+  opacity: 1;
 }
-header div.inner ul.menu li ul.innerUl li a {
+header div.inner ul.menu li ul.menuSub {
+  position: absolute;
+  top:100px;
+  right:0;
+  height: 50px;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.3s 0.3s;
+}
+header div.inner ul.menu li:hover ul.menuSub{
+  opacity:1;
+  transform: scale(1);
+}
+header div.inner ul.menu li ul.menuSub li {
+  white-space: nowrap;
+  padding-top: 17px;
+}
+header div.inner ul.menu li ul.menuSub li:not(:last-child) a{
+  border-right: 1px solid rgba(125,125,125,0.2);
+  padding: 0 10px;
+}
+header div.inner ul.menu li ul.menuSub li a {
+  transition: all 0.5s;
+  position: relative;
+  padding-left: 10px;
+  color:#424242
+}
+header div.inner ul.menu li ul.menuSub li a::after {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-bottom: 2px solid #009252;
+  transition: all 0.5s;
+  left: 10px;
+}
+header div.inner ul.menu li ul.menuSub li:hover a {
+  color: #009752;
+}
+header div.inner ul.menu li ul.menuSub li:hover a::after {
+  width: calc(100% - 20px);
 }

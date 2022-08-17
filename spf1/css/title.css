@@ -4,6 +4,7 @@
 }
 #title div.inner div.carousel {
   position:relative;
+  z-index:-1;
 }
 #title div.inner div.carousel img {
   width: 100%;

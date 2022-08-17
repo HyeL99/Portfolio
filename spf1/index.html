@@ -20,13 +20,13 @@
         <div class="inner flex jusSpaBet alnCen">
             <h1><a href="#">새미네부엌</a></h1>
             <nav>
-                <ul class="flex jusCen">
+                <ul class="flex jusCen gnb">
                     <li><a href="#">요리 상담소</a></li>
                     <li><a href="#">요리법 연구소</a></li>
                     <li><a href="#">요리해요</a></li>
                     <li>
                         <a href="#">맛있는 추억을 그리다</a>
-                        <ul class="innerUl flex">
+                        <ul class="gnbSub flex">
                             <li><a href="#">맛추억 소개</a></li>
                             <li><a href="#">자주 묻는 질문</a></li>
                             <li><a href="#">맛추억 문의</a></li>
@@ -39,7 +39,7 @@
                 <li><a href="#">검색</a></li>
                 <li>
                     <a href="#">회원메뉴</a>
-                    <ul class="innerUl flex">
+                    <ul class="menuSub flex">
                         <li><a href="#">로그인</a></li>
                         <li><a href="#">공모전 참여내역</a></li>
                         <li><a href="#">이벤트 참여내역</a></li>
@@ -129,6 +129,7 @@
             <section id="question">
                 <h2>모든 고민, 요리 상담소에서 한큐에 해결!</h2>
                 <article class="cookCard">
+                    <span class="img"></span>
                     <div class="textArea">
                         <h3>기분 전환을 위한 힐링 요리법</h3>
                         <div class="social flex">
@@ -348,7 +349,7 @@
                         <option value="">샘표 통합회원 웹사이트</option>
                     </select>
                 </div> -->
-                <div class="selectBox" data-role="selectBox">
+                <!-- <div class="selectBox" data-role="selectBox">
                     <span class="selectedOption" date-value="optValue">관련사이트</span>
                     <ul class="hide">
                         <li><a href="">샘표 기업</a></li>
@@ -359,7 +360,20 @@
                         <li><a href="">샘표 채용</a></li>
                         <li><a href="">샘표 통합회원 웹사이트</a></li>
                     </ul>
+                </div> -->
+                <div class="select">
+                    <select name="관련사이트" id="site" class="selectBox">
+                        <option selected><a href="">관련사이트</a></option>
+                        <option value=""><a href="">샘표 기업</a></option>
+                        <option value=""><a href="">새미네부엌 플랫폼</a></option>
+                        <option value=""><a href="">티아시아 키친</a></option>
+                        <option value=""><a href="">새미네 부엌</a></option>
+                        <option value=""><a href="">폰타나</a></option>
+                        <option value=""><a href="">샘표 채용</a></option>
+                        <option value=""><a href="">샘표 통합회원 웹사이트</a></option>
+                    </select>                    
                 </div>
+                
             </div>
             <div class="f-bottom flex jusSpaBet">
                 <ul class="flex fWrap">
@@ -373,6 +387,6 @@
             </div>
         </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
 </body>
 </html>

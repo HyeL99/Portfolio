@@ -18,6 +18,48 @@ footer div.inner div.f-top>ul>li:not(:last-child) a {
   margin-right: 20px;
   border-right: 1px solid #f0f0f0;
 }
+footer div.inner div.f-top div.select{
+  width: 20%;
+  height: 40px;
+  position: relative;
+}
+footer div.inner div.f-top div.select::before{
+  content:"";
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 1px;
+  background: #424242;
+  right:20px;
+  top: 50%;
+}
+footer div.inner div.f-top div.select::after{
+  content:"";
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 1px;
+  background: #424242;
+  right:20px;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+footer div.inner div.f-top select.selectBox{
+  padding: 0px 10px;
+  width: 100%;
+  height: 100%;
+  border:1px solid #f0f0f0;
+  background-color: white;
+  cursor: pointer;
+  line-height: 2.5;
+  appearance: none;
+  font-family: 'GowunDodum-Regular';
+}
+footer div.inner div.f-top select.selectBox option a{
+  font-family: 'GowunDodum-Regular';
+}
+/*
 footer div.inner div.f-top div.selectBox{
   position: relative;
   padding: 0px 10px;
@@ -76,7 +118,7 @@ footer div.inner div.f-top div.selectBox ul li {
    padding: 10px;
   border-right: 0px;
   height:5px;
-}
+}*/
 footer div.inner div.f-bottom {
   margin: 20px 0;
   font-size: 14px;

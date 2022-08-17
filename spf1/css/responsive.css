@@ -2,7 +2,22 @@
   #title div.inner {
     width: 100%;
   }
-  header div.inner nav{
+  header{
+    height: 80px;
+  }
+  header div.inner ul.menu > li {
+  padding: 25px 0;
+  }
+  header div.inner h1 a{
+    height: 60px;
+  }
+  section {
+    margin-top: 50px;
+  }
+  #question div.questionList {
+      margin-top: 20px;
+   }
+  header div.inner nav {
     display: none;
   }
   header div.inner ul.menu li:nth-of-type(2){
@@ -12,13 +27,18 @@
   display: block;
   }
   #question article.cookCard {
-    width: 100%;
     padding-bottom: calc(50% + 185px);
-    background: #fff url("../img/question-img.jpg") no-repeat center top /100%;
+    position: relative;
   }
-  #question article.cookCard:hover{
-    background: #fff url("../img/question-img.jpg") no-repeat center top /120%;
-    transition-duration: 0.3s;
+  #question article.cookCard span{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 125px);
+    top:0;
+    background: #fff url("../img/question-img.jpg") no-repeat top /105%;
+  }
+  #question article.cookCard:hover span{
+    background: #fff url("../img/question-img.jpg") no-repeat top /115%;
   }
   #question article.cookCard div.textArea{
     width: calc(100% - 60px);
@@ -35,7 +55,7 @@
     margin-bottom: 44px;
   }
   #question div.questionList {
-    row-gap: 10px;
+    row-gap: 20px;
   }
   #question div.questionList article.questionCard {
     width: calc(100% / 2 - 15px);
