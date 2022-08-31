@@ -1,0 +1,84 @@
+/* **************************************
+    Noto Sans KR
+************************************** */
+@font-face {
+font-family:'Noto Sans KR';
+font-weight:100;
+font-style:normal;
+src:url('../assets/fonts/NotosansKR/NotoSansKR-Thin.otf') format('opentype');
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-weight:300;
+font-style:normal;
+src:url('../assets/fonts/NotosansKR/NotoSansKR-Light.otf') format('opentype');
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-weight:400;
+font-style:normal;
+src:url('../assets/fonts/NotosansKR/NotoSansKR-Regular.otf') format('opentype');
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-weight:500;
+font-style:normal;
+src:url('../assets/fonts/NotosansKR/NotoSansKR-Medium.otf') format('opentype');
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-weight:700;
+font-style:normal;
+src:url('../assets/fonts/NotosansKR/NotoSansKR-Bold.otf') format('opentype');
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-weight:900;
+font-style:normal;
+src:url('../assets/fonts/NotosansKR/NotoSansKR-Black.otf') format('opentype');
+}
+/* **************************************
+    Mark Pro Web Font
+************************************** */
+@font-face {
+    font-family:'Mark Pro';
+    font-weight:100;
+    font-style:normal;
+    src:url('../assets/fonts/MarkPro/MarkPro-ExtraLight.ttf') format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+    font-family:'Mark Pro';
+    font-weight:300;
+    font-style:normal;
+    src:url('../assets/fonts/MarkPro/MarkPro-Light.ttf') format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+    font-family:'Mark Pro';
+    font-weight:400;
+    font-style:normal;
+    src:url('../assets/fonts/MarkPro/MarkPro-Medium.ttf') format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+    font-family:'Mark Pro';
+    font-weight:600;
+    font-style:normal;
+    src:url('../assets/fonts/MarkPro/MarkPro-Bold.ttf') format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+    font-family:'Mark Pro';
+    font-weight:700;
+    font-style:normal;
+    src:url('../assets/fonts/MarkPro/MarkPro-Heavy.ttf') format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+    font-family:'Mark Pro';
+    font-weight:900;
+    font-style:normal;
+    src:url('../assets/fonts/MarkPro/MarkPro-Black.ttf') format('truetype');
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Mark Pro';
+    src:local("Mark Pro"),
+        url('Mark Pro.eot') format('embedded-opentype'),
+        url('Mark Pro.woff') format('woff'),
+        url('Mark Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

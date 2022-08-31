@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pf01. SOMANSA</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/basis.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style></style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <!-- slick script -->
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick-theme.css"/>
+    <script type="text/javascript" src="plugin/slick/slick.js"></script>
+
+
+    <!-- common script -->
+    <script type="text/javascript">
+      $(function(){
+        $('a').click(function(){return false;});
+
+        $('.slidePldace').slick({
+          prevArrow: $(".visionPrev"),
+          nextArrow: $(".visionNext"),
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay:true,
+          autoplaySpeed: 2000,
+        });
+        let auto = true;
+        $('.visionStop').click(function(){
+          if(auto){
+            $('.slidePldace').slick('slickPause');
+            $('.visionStop span').css('background',' url("./assets/img/play.svg") no-repeat center / contain');
+            auto = false;
+          }else{
+            $('.slidePldace').slick('slickPlay');
+            $('.visionStop span').css('background','url("./assets/img/pause.svg") no-repeat center / contain');
+            auto = true;
+          }
+          
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1><a href="#"><img src="assets/img/index_logo.png" alt="SOMANSA"></a></h1>
+        <nav>
+          <ul class="gnb flex">
+            <li class="gnbItem solution">
+              <h2><a href="#">솔루션</a></h2>
+              <ul class="gnbSub">
+                <li class="gnbSubItem">
+                  <h3>개인정보 접근통제</h3>
+                  <a href="#"><strong>DB-i</strong> (데이터베이스)</a>
+                  <a href="#"><strong>WAS-i</strong> (웹앱)</a>
+                  <a href="#"><strong>App-i</strong> (SAP앱)</a>
+                </li>
+                <li class="gnbSubItem">
+                  <h3>개인정보 DLP</h3>
+                  <a href="#">네트워크DLP <strong>Mail-i</strong></a>
+                  <a href="#">엔드포인트DLP <strong>Privacy-i</strong></a>
+                  <a href="#">서버DLP <strong>Server-i</strong></a>
+                </li>
+                <li class="gnbSubItem">
+                  <h3>EDR·악성코드차단</h3>
+                  <a href="#">악성코드차단<strong>WebKeeper</strong></a>
+                  <a href="#"><strong>Privacy-i</strong> EDR</a>
+                </li>
+                <li class="gnbSubItem">
+                  <h3>논리적 망분리</h3>
+                  <a href="#">Secure<strong> VD-i</strong></a>
+                </li>
+                <li class="gnbSubItem">
+                  <h3>개인정보보호 통합솔루션</h3>
+                  <ul class="subSub">
+                    <li class="subSubItem"><a href="#">DBMS <strong>접속기록 통합관리</strong></a></li>
+                    <li class="subSubItem"><a href="#">DB·서버·엔드포인트 <strong>Discover</strong></a></li>
+                    <li class="subSubItem"><a href="#">DB·서버·엔드포인트·네트워크 <strong>DLP</strong></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem">
+              <h2><a href="#">컨설팅</a></h2>
+            </li>
+            <li class="gnbItem report">
+              <h2><a href="#">프라이버시 리포트</a></h2>
+              <ul class="gnbSub">
+                <li class="gnbSubItem"><a href="#">프라이버시 리포트</a></li>
+                <li class="gnbSubItem"><a href="#">웹키퍼 리포트</a></li>
+                <li class="gnbSubItem"><a href="#">시큐리티 노트</a></li>
+              </ul>
+            </li>
+            <li class="gnbItem intro">
+              <h2><a href="#">회사소개</a></h2>
+              <ul class="gnbSub">
+                <li class="gnbSubItem"><a href="#">인재채용</a></li>
+                <li class="gnbSubItem"><a href="#">비전</a></li>
+                <li class="gnbSubItem"><a href="#">연혁</a></li>
+                <li class="gnbSubItem"><a href="#">뉴스/이벤트</a></li>
+                <li class="gnbSubItem"><a href="#">유튜브</a></li>
+                <li class="gnbSubItem"><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="title">
+      <div class="inner">
+        <div class="imgWrap">
+          <img src="assets/img/title1.jpg" alt="SOMANSA Title">
+        </div>
+        <div class="textPlace">
+          <h3>Secure VDI Solution</h3>
+          <p>외산대비 1/2 비용구축</p>
+          <p>Secure VDI VD-i</p>
+          <a href="#">자세히보기</a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="main01">
+        <div class="inner">
+          <h3>Solution</h3>
+          <ul>
+            <li>
+              <div>
+                <h4>개인정보<br />접근통제</h4>
+                <a href="#">DB 접근통제 DB-i</a>
+                <a href="#">WAS 접근통제 WAS-i</a>
+                <a href="#">SAP 접근통제 App-i</a></div>
+            </li>
+            <li>
+              <div>
+                <h4>개인정보<br />DLP</h4>
+                <a href="#">네트워크DLP Mail-i</a>
+                <a href="#">엔드포인트DLP Privacy-i </a>
+                <a href="#">서버DLP Server-i</a></div>
+            </li>
+            <li>
+              <div>
+                <h4>EDR<br />악성코드차단</h4>
+                <a href="#">유해사이트차단 WebKeeper</a>
+                <a href="#">EDR솔루션 Privacy-i EDR </a>
+            </li>
+            <li>
+              <div>
+                <h4>논리적<br />망분리</h4>
+                <a href="#">Secure VD-i</a>
+            </li>
+            <li>
+              <div>
+                <h4>통합<br />솔루션</h4>
+                <a href="#">접속기록 통합관리</a>
+                <a href="#">개인정보 전수검사</a>
+                <a href="#">엔터프라이즈DLP</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="main02">
+        <h3>PRIVACY CONSULTING</h3>
+        <a href="#">개인정보 법규정에 최적화,법의 의도를 읽어내는 컨설팅<br />
+          개인정보보호법, 정보통신망법, 신용정보법 등 개인정보 법규정에 최적화되어있습니다.
+        </a>
+      </section>
+      <section id="main03">
+        <div class="inner">
+          <h3>정보보호 리포트</h3>
+          <p>정보보호는 지속 가능성이 핵심입니다.<br />
+            소만사는 정보보호법규, 악성코드, 보안기술을 적시에 파악해<br />
+            시시각각 변화하는 위협에 신속하게 대응할 수 있도록 지원하고 있습니다.
+          </p>
+          <ul>
+            <li><a href="#">프라이버시 리포트</a></li>
+            <li><a href="">웹키퍼 리포트</a></li>
+            <li><a href="#">시큐리티 노트</a></li>
+          </ul>
+        </div>
+        
+      </section>
+      <section id="main04">
+        <div class="inner">
+          <div class="left">
+            <article class="video">
+            <iframe width="468" height="278" src="https://www.youtube.com/embed/9dcrR9jY8Vk" frameborder="0"  allowfullscreen></iframe>
+            </article>
+            <ul class="logos">
+              <li>
+                <a href="">
+                  <img src="assets/img/main_logo01.jpg" alt="gartner">
+                  <p>등재</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="assets/img/main_logo02.jpg" alt="gartner">
+                  <p>RATING</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="assets/img/main_logo03.jpg" alt="gartner">
+                  <p>등재</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <article class="vision">
+              <div class="header">
+                <h3>VISION</h3>
+                <div class="buttonPlace">
+                  <a href="#" class="visionPrev">이전</a>
+                  <a href="#" class="visionStop">멈춤<span></span></a>
+                  <a href="#" class="visionNext">다음</a>
+                </div>
+              </div>
+              <ul class="slidePldace">
+                <li>
+                  <p>서비스로 100년경영</p>
+                  <p>서비스 모델의 비전</p>
+                </li>
+                <li class="">
+                  <p>한 소프트웨어 1만판매</p>
+                  <p>해외진출의 비전</p>
+                </li>
+                <li class="">
+                  <p>개발자로 30년 일하기</p>
+                  <p>인재양성의 비전</p>
+                </li>
+              </ul>
+            </article>
+            <article class="news">
+              <div class="header">
+                <h3>NEWS</h3>
+                <a href="#">MORE +</a>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">소만사, 악성코드 '허메틱와이퍼' 분석</a>
+                  <p>2022. 03. 04</p>
+                </li>
+                <li>
+                  <a href="#">2021년 주요 악성코드 분석리포트 발간</a>
+                  <p>2022. 03. 02</p>
+                </li>
+                <li>
+                  <a href="#">소만사, VDI 솔루션과 EDR 시장 판도 바꾼다</a>
+                  <p>2022. 02. 03</p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="fTop">
+        <div class="inner">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+          <div class="select">
+            <p class="selectBtn">Seculab</p>
+            <p class="selectList">
+                <a href="">Seculab</a>
+                <a href="">소만사 마주법인</a>
+            </p>
+          </div>
+          <!-- <select name="seculab" id="select01">
+            <option value="seculab"><a href="#">seculab</a></option>
+            <option value="소만사 미주법인"><a href="#">소만사 미주법인</a></option>
+          </select>-->
+        </div>
+      </div>
+      <div class="fBottom">
+        <div class="inner">
+          <h2>SOMANSA</h2>
+          <div class="textPlace">
+            <ul>
+              <li>대표번호 : 02-2636-8300</li>
+              <li>기술문의 : tech@somansa.com</li>
+              <li>제품구매 : 02-2655-4162 / sales@somansa.com</li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <adress>서울특별시 영등포구 영신로220 KnK디지털타워 9층 소만사</adress>
+            <p>(c) 2022 somansa co.,ltd. all rights reserved.</p>
+          </div>
+          <ul class="socialPlace">
+            <li><a href="#">유튜브</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">페이스북</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

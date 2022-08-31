@@ -1,0 +1,60 @@
+/* commen */
+body {
+  font-size: 18px;
+  overflow-x: hidden;
+  font-family: 'Noto Sans KR',sans-serif;
+}
+
+/* font size */
+.h2{
+  display: inline-block !important;
+  font-size: 98px;
+  font-weight: 900;
+  position: relative;
+  margin-bottom: 72px;
+}
+.h3{
+  font-size: 32px;
+  font-weight: 900;
+}
+.h4{
+  font-size: 24px;
+  font-weight: 600;
+}
+/* class */
+.hide{
+  display: none;
+}
+.br{
+  display: block;
+}
+.inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.fCol {
+  flex-direction: column;
+}
+.jusCen {
+  justify-content: center;
+}
+.jusSpaBet {
+  justify-content: space-between;
+}
+.alnCen {
+  align-items: center;
+}
+.alnEnd {
+  align-items: flex-end;
+}
+.jusEnd {
+  justify-content: flex-end;
+}
+.fWrap {
+  flex-wrap: wrap;
+}
