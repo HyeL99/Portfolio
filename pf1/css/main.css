@@ -1,17 +1,23 @@
+.up{
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
 #taste {
 }
 #taste h2 {
-  margin-bottom: 250px;
+  margin-bottom: 20%;
 }
 #taste ul {
   margin: 0 auto;
 }
 #taste ul li {
   width: calc(100% / 6);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.3s;
 }
 #taste ul li:hover {
-  transform: translateY(-20px);
-  transition-duration: 0.3s;
+  transform: translateY(-20px) !important;
 }
 #taste ul li a {
   width: 90%;
@@ -78,10 +84,12 @@
 #brand ul li {
   width: calc(100% / 6);
   height: 220px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.3s 0s;
 }
 #brand ul li:hover {
-  transform: translateY(-20px);
-  transition-duration: 0.3s;
+  transform: translateY(-20px) !important;
 }
 #brand ul li div {
   width: 90%;
@@ -147,6 +155,9 @@
 #help article.card {
   position: relative;
   background: url("../img/c1.png") no-repeat center right/cover;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s;
 }
 #help article.card:nth-of-type(2) {
   background: url("../img/c2.png") no-repeat center right/cover;
@@ -187,6 +198,9 @@
   text-align: center;
   line-height: 2.75;
   border: 1px solid rgba(125, 125, 125, 0.5);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s;
 }
 #service article.fnq div.fnq-header a:hover {
   background-image: linear-gradient(to top, #ed1c24, #e0462e);
@@ -239,9 +253,15 @@
   margin: 0 auto;
   margin-top: 20px;
 }
+#service div.card-space article{
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s;
+}
 #service div.card-space article.email {
   position: relative;
   background: url("../img/c3.png") no-repeat center right/cover;
+  translate: all 0.5s;
 }
 #service div.card-space article.email h2 {
   margin-bottom: 29px;
