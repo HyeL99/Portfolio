@@ -1,0 +1,74 @@
+.select {
+  font-weight: 500;
+  width: 227px;
+  height: 38px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #757575;
+  position: relative;
+}
+.select::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background: red;
+  right: 10px;
+  top: 50%;
+}
+.select::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background: red;
+  right: 10px;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.select h3 {
+  line-height: 38px;
+  margin-left: 12px;
+}
+.select ul.option-list {
+  width:100%;
+  position: absolute;
+  bottom:0;
+  left:0;
+  background:#fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 9px 13px rgba(0,0,0,.26);
+  padding: 10px 0;
+  border-radius: 10px;
+  z-index: 1;
+}
+.select ul.option-list li.option {
+  height: 38px;
+}
+.select ul.option-list li.option:not(:first-child):hover{
+  background: #eee;
+}
+.select ul.option-list li.option:first-child a{
+  font-weight: 500;
+}
+.select ul.option-list li.option:not(:first-child):hover a::after{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url("../img/option.svg") no-repeat center /contain;
+  right:-20px;
+  top: calc(50% - 6px);
+}
+.select ul.option-list li.option a {
+  line-height: 38px;
+  margin-left: 15px;
+  color: #000;
+  position: relative;
+  font-weight: 300;
+}

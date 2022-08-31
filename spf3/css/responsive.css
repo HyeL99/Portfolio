@@ -1,0 +1,284 @@
+@media screen and (max-width:1199px){
+  .inner{
+    width: 928px;
+  }
+  footer div.f-top div.inner>ul>li{
+    margin-right:40px;
+  }
+}
+@media screen and (max-width:991px){
+  .inner{
+    width: 684px;
+  }
+  #quick{
+    display: none;
+  }
+  header{
+    height: 68px;
+  }
+  header div.inner h1 a{
+    width: 56px;
+    height: 46px;
+  }
+  nav{
+    position: absolute;
+    left:0;
+    top:94px;
+    width: 460px !important;
+    display: none;
+  }
+  header div.inner nav ul{
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  header div.inner ul.menu li:nth-of-type(1){
+    position: absolute;
+    right:51px;
+    top:79px;
+    display: none;
+  }
+  header div.inner ul.menu li:nth-of-type(1) a{
+    width: 150px;
+  }
+  header div.inner ul.menu li:nth-of-type(2){
+    position: absolute;
+    right: 0;
+    top: 79px;
+    display: none;
+  }
+  header div.inner ul.menu li:nth-of-type(3){
+    display: block;
+  }
+  #title div.inner>ul>li{
+    height:600px;
+  }
+  #title div.inner div.text{
+    font-size: 39px;
+  }
+  #main ul.inner{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  #main ul.inner li{
+    width: 100%;
+  }
+  #story{
+    background: #d9de87;
+    height:100vh;
+  }
+  #story div.inner{
+    height: 100vh;
+    background: url("../img/story-cha.png") no-repeat left -50% bottom 320px;
+  }
+  #story div.inner article{
+    width: 534px;
+    margin: 0 auto;
+    height: auto;
+    padding-right: 100px;
+  }
+  #story div.inner article p:nth-of-type(2){
+    margin-bottom: 70px;
+  }
+  #play div.inner p span{
+    display: block;
+  }
+  #play div.inner div.articlePlace article a.plus{
+    width: 130px;
+  }
+  #notice div.inner {
+    width: calc(684px - 164px);
+    padding-right: 132px;
+    
+  }
+  #notice div.inner div.in{
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+  }
+  #question{
+    background-position: left calc(-300px + 10%) bottom -8px,right calc(-300px + 10%) bottom -8px;
+  }
+  footer div.f-top div.inner{
+    flex-direction: column;
+  }
+  footer div.f-top div.inner h2{
+    display: none;
+  }
+  footer div.f-top div.inner > ul{
+    margin-left: 0;
+    width: 100%;
+  }
+  footer div.f-top div.inner div.select{
+    align-self: flex-start;
+  }
+  footer div.f-bottom div.inner{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer div.f-bottom div.inner div.right{
+    align-items: flex-start;
+    margin-top:10px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width:767px){
+  body{
+    font-size: 14px;
+  }
+  .inner{
+    width: calc(100% - 24px);
+  }
+  nav{
+    top: 163px;
+    left: -5%;
+    width: calc(100% - 274px) !important;
+    padding: 0 125px;
+  }
+  .bar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid hsla(0,0%,43.9%,.23);
+    top: 0px;
+    left: 0;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+  }
+  header div.inner ul.menu li:nth-of-type(1){
+    right: 0;
+    top: 148px;
+  }
+  #title div.inner div.text{
+    font-size: 30px;
+  }
+  #title div.inner div.text p span:nth-of-type(2){
+    display: block;
+  }
+  #story div.inner article{
+    width: calc(100% - 78px);
+    margin: 0 auto;
+    height: auto;
+    padding-right: 100px;
+    padding-left: 24px;
+    padding-right:30px;
+  }
+  #story{
+    height: 1100px;
+  }
+  #story div.inner{
+    height: 1100px;
+    background: url("../img/story-cha.png") no-repeat left 70% bottom 300px/140%;
+  }
+  #story div.inner article a.plus{
+    left: 24px;
+  }
+  #story::before {
+    width: 40%;
+    height: 50%;
+  }
+  #play div.inner p{
+    font-size: 1em;
+  }
+  #play div.inner div.articlePlace{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  #play div.inner div.articlePlace article{
+    width:calc(100% - 40px);
+    margin-right: 0px;
+    padding-top: 400px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  #play div.inner div.articlePlace article::before{
+    top:0;
+    left:0;
+    height: 380px;
+  }
+  #play div.inner div.articlePlace article::after{
+    height: 380px;
+    top:0;
+    left:0;
+  }
+  #play div.inner div.articlePlace article a.plus{
+    width: 160px;
+    left: calc(50% - 80px);
+  }
+  #notice div.inner{
+    padding:0;
+    height: 60px;
+    padding-left:32px;
+    padding-right: 110px;
+    width: calc(100% - 166px);
+  }
+  #notice div.inner div.in a{
+    width:100%;
+    display: inline-block;
+    animation: textAni 9s linear infinite;
+  }
+  #notice div.inner div.in a{
+    font-size: 16px;
+    line-height: 60px;
+  }
+  footer div.f-top div.inner > ul{
+    justify-content: flex-start;
+    height: 100px;
+    flex-direction: column;
+  }
+  footer div.f-top div.inner > ul > li{
+    width: 50%;
+    margin-right: 0px;
+  }
+  footer div.f-top div.inner div.select{
+    width: 100%;
+  }
+  footer div.f-bottom div.inner div.right{
+    margin-bottom: 0;
+  }
+  #play div.inner div.articlePlace article:last-child::after {
+    background: url("../img/game2.png") no-repeat center / cover;
+  }
+}
+@media screen and (max-width:575px){
+  body{
+    font-size: 12px;
+  }
+  #title div.inner{
+    overflow-x: hidden;
+  }
+  #title div.inner>ul>li{
+    height : 100vh;
+    width: 75%;
+    flex-shrink: 0;
+  }
+  #title div.inner div.text p span:nth-of-type(1){
+    display: block;
+  }
+  #title div.inner div.text{
+    line-height: 1.5;
+    text-align: start;
+    padding-left: 20px;
+    top: calc(100px + 5%);
+  }
+  #story{
+    height: 900px;
+  }
+  #story div.inner{
+    height: 900px;
+    padding: 10% 0;
+    background: url("../img/story-cha.png") no-repeat left 70% bottom 200px/140%;
+  }
+  
+}
+
+@keyframes textAni{
+  0%{
+    transform:translateX(100%)
+  }
+  100%{
+    transform:translateX(-100%)
+  }
+}

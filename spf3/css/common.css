@@ -1,0 +1,113 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/* commen */
+body {
+    color: #354463;
+    background: #f5f6f8;
+    font-family: 'Noto Sans KR' ,sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    overflow-x:hidden;
+}
+
+/* class */
+.bar{
+  position: absolute;
+  width:0;
+  height:0;
+}
+.hide{
+  display: none;
+}
+.inner {
+  width: 1120px;
+  margin: 0 auto;
+}
+.button{
+  display: block;
+  background-color: #ff6969;
+  box-shadow: 0 5px 10px rgba(255,105,105,.4);
+  box-sizing: border-box;
+  height: 46px;
+  border-radius: 23px;
+  width: 46px;
+}
+.question{
+  display: block;
+  background-color: #ff6969;
+  box-shadow: 0 5px 10px rgba(255,105,105,.4);
+  box-sizing: border-box;
+  height: 46px;
+  border-radius: 23px;
+  width: 164px;
+  color: #fff;
+  line-height: 46px;
+  text-align: center;
+  position: relative;
+  padding-right:20px;
+  font-weight: 400;
+}
+.question::after{
+  content:"";
+  position: absolute;
+  display: block;
+  width:28px;
+  height:28px;
+  border-radius: 14px;
+  background: url("../img/button-arrow.svg");
+  right:8px;
+  top:8px;
+}
+.plus{
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(114,124,142,.36);
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 20px;
+  width: 160px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  color: #727c8e;
+  font-size: 12px;
+  padding-right:20px;
+  font-weight: 400;
+}
+.plus::after{
+  content:"";
+  position: absolute;
+  display: block;
+  width:28px;
+  height:28px;
+  border-radius: 14px;
+  background: url("../img/button-arrow-red.svg");
+  right:6px;
+  top:6px;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.fCol {
+  flex-direction: column;
+}
+.jusCen {
+  justify-content: center;
+}
+.jusSpaBet {
+  justify-content: space-between;
+}
+.alnCen {
+  align-items: center;
+}
+.alnEnd {
+  align-items: flex-end;
+}
+.jusEnd {
+  justify-content: flex-end;
+}
+.fWrap {
+  flex-wrap: wrap;
+}

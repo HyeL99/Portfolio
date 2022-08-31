@@ -1,0 +1,49 @@
+#quick {
+    position: fixed;
+    top: 140px;
+    right: 40px;
+}
+#quick ul{
+    row-gap: 70px;
+    padding-top: 50px;
+}
+#quick ul li {
+}
+#quick ul li a {
+    font-size: 12px;
+    padding-top: 50px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+#quick ul li a::before{
+    content:"";
+    display: block;
+    background: #ff6969 url("../img/keyboard.svg") no-repeat center / contain;
+    box-shadow: 0 5px 10px rgba(255,105,105,.4);
+    box-sizing: border-box;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    position: absolute;
+    top:0;
+    left: 1px;
+}
+#quick ul li:nth-of-type(2) a::before{
+    left: 13px;
+    background: #ff6969 url("../img/cloud.svg") no-repeat center / contain;
+}
+#quick ul li:nth-of-type(3) a::before{
+    left: -5px;
+    background: #ff6969 url("../img/umbrella.svg") no-repeat center / contain;
+}
+@keyframes downBtnAni{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

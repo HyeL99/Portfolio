@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_arrow_drop_up_1" transform="translate(24 24) rotate(180)">
+    <rect id="rectangle" width="24" height="24" transform="translate(0 0)" fill="none"/>
+    <g id="그룹_3640" data-name="그룹 3640" transform="translate(-13 1)">
+      <line id="선_46" data-name="선 46" y1="12" transform="translate(25.5 5.5)" fill="none" stroke="#ff6969" stroke-linecap="round" stroke-width="3"/>
+      <line id="선_47" data-name="선 47" y1="12" transform="translate(31.5 11.5) rotate(90)" fill="none" stroke="#ff6969" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

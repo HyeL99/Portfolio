@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>s-pf5.malangmalang</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/quick.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/title.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick-theme.css"/>
+    <script type="text/javascript" src="plugin/slick/slick.js"></script>
+    <link rel="stylesheet" href="css/slickModify.css" />
+    <script type="text/javascript">
+      $(function () {
+        let character = [
+          {
+            img: "./img/amogae.png",
+            name: "./img/amogae-text.svg",
+            color: "#b43bff",
+          },
+          {
+            img: "./img/gigi.png",
+            name: "./img/gigi-text.svg",
+            color: "#ff457e",
+          },
+          {
+            img: "./img/yaya.png",
+            name: "./img/yaya-text.svg",
+            color: "#ff5353",
+          },
+          {
+            img: "./img/maman.png",
+            name: "./img/maman-text.svg",
+            color: "#ff8f4a",
+          },
+          {
+            img: "./img/6b.png",
+            name: "./img/6b-text.svg",
+            color: "#4694ff",
+          },
+        ];
+        let i = 1;
+        let winW = $(window).width();
+        $("#title div.inner ul.slide li.slideLi").append(
+          '<span class="modelName"></span>'
+        );
+        for (let model of character) {
+          $("#title div.inner ul li:nth-of-type(" + i + ")").css({
+            "font-size": "0",
+            background: model.color,
+          });
+          $("#title div.inner ul li:nth-of-type(" + i + ")")
+            .children("span.modelName")
+            .css(
+              "background",
+              "url('" + model.name + "') no-repeat center / contain"
+            );
+          $("#title div.inner ul li:nth-of-type(" + i + ")")
+            .children("span")
+            .before('<span class="modelImage"></span>');
+          $("#title div.inner ul li:nth-of-type(" + i + ")")
+            .children("span.modelImage")
+            .css(
+              "background",
+              "url('" + model.img + "') no-repeat bottom / contain"
+            );
+          let num1 = (i - 1) * 0.15;
+          $("#title div.inner ul li:nth-of-type(" + i + ") span").css({
+            "animation-name": "upChaAni",
+            "animation-duration": "0.4s",
+            "animation-timing-function": "linear",
+            "animation-fill-mode": "forwards",
+            "animation-delay": num1 + "s",
+          });
+          // $("#title div.inner ul li:eq("+i+")").css(
+          //     'background',' url('+model.img+') no-repeat 50% calc(100% - 20px) /contain;'
+          // );
+          console.log(model.img);
+          i++;
+        }
+        for (let j = 1; j < 4; j++) {
+          let num2 = (j - 1) * 0.3;
+          $("#quick ul li:nth-of-type(" + j + ") a").css({
+            "animation-name": "downBtnAni",
+            "animation-duration": "0.6s",
+            "animation-timing-function": "linear",
+            "animation-fill-mode": "forwards",
+            "animation-delay": num2 + "s",
+          });
+        }
+        $("#title div.inner div.text h2").css("opacity", "1");
+        $(".select").children("ul").hide();
+        $(".select").on("click", function () {
+          $(".option-list").toggle();
+        });
+        $(".option")
+          .children("a")
+          .on("click", function () {
+            $(".option-list").toggle();
+            return false;
+          });
+        $("a").click(function () {
+          return false;
+        });
+        doSlick(winW);
+        let a = 0;
+        /*
+            $(window).resize(function(){
+                if(a==0){
+                    a=1;
+                    setTimeout(function(){
+                        a=0;                        
+                    },500)
+                    winW=$(window).width();
+                        doSlick(winW);
+                }
+            });*/
+        
+        $("header").before(
+          '<div id="gnbBack" class="hide"><div class="inner"></div></div>'
+        );
+        $("#gnbBack").before("<span id='darkbg'></span>");
+        $("header .inner").prepend('<span class="bar"></span>');
+        let clk = false;
+        if (winW > 991) {
+          $(".menuItem").show();
+        }
+        
+        $(".menuButton").on("click", function(){
+            if(clk) {
+                clk = false;
+                closeMune(winW);
+            }else{
+                clk = true;
+                openMenu(winW);
+            }
+        });
+
+        $(window).resize(function () {
+            winW = $(window).width();
+            doSlick(winW);
+            if (winW > 991) {
+                $(".menuItem").show();
+                $("#gnbBack .inner").css("height", "20px");
+                $("#gnbBack").css("height", "50px");
+                $("#darkbg").hide();
+            }else if(winW >767){
+                $("#gnbBack").css({"height":"100vh","width":"0%"});
+                if(clk) {
+                    openMenu(winW);
+                }else{
+                    closeMune(winW);
+                }
+            }else{
+                $("#gnbBack").css({"height":"50px","width":"100%"});
+                if(clk) {
+                    openMenu(winW);
+                }else{
+                    closeMune(winW);
+                }
+            }
+        });
+
+        // 함수 선언
+        function doSlick(width) {
+          $(".slide").filter('.slick-initialized').slick('unslick');
+          if (width > 575) {
+            $(".arrow").hide();
+            $(".slide").filter('.slick-initialized').slick('unslick');
+          } else {
+            $(".arrow").show();
+            $(".slide").not('.slick-initialized').slick({
+                dots: true,
+                prevArrow: $(".prev"),
+                nextArrow: $(".next"),
+                infinite: true,
+                slidesToShow: 1.15,
+                slidesToScroll: 1,
+                autoplay:true,
+                autoplaySpeed: 2000,
+              });
+          }
+        }
+        function openMenu(winW){
+            if (winW <= 730) {
+                $("#gnbBack").css({"width":"244px","height":"100vh"});
+                $("#gnbBack .inner").css("height", "355px");
+                $(".bar").css({ top: "136px", opacity: "1" });
+            } else if (winW <= 767) {
+                $("#gnbBack").css({"height":"237px","width":"100%"});
+                $("#gnbBack .inner").css("height", "205px");
+                $(".bar").css({ top: "136px", opacity: "1" });
+            } else if (winW <= 991) {
+                $("#gnbBack").css({"height":"168px","width":"100%"});
+                $("#gnbBack .inner").css("height", "136px");
+            }
+            $("#darkbg").show();
+            setTimeout(function () {
+            $(".menuItem").show();
+            }, 180);
+        }
+        function closeMune(winW){
+            if (winW <= 730) {
+                $("#gnbBack").css("width", "0px");
+            } else {
+                $("#gnbBack").css("height", "50px");
+            }
+            $(".menuItem").hide();
+            $(".bar").css({ top: "0px", opacity: "0" });
+            $("#gnbBack .inner").css("height", "20px");
+            setTimeout(function () {
+            $("#darkbg").hide();
+            }, 180);
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner flex jusSpaBet alnCen">
+        <h1><a href="">말랑말랑</a></h1>
+        <nav class="menuItem">
+          <ul class="flex jusSpaBet">
+            <li><a href="">말랑말랑무브먼트</a></li>
+            <li><a href="">한컴타자</a></li>
+            <li><a href="">한컴스페이스</a></li>
+            <li><a href="">말랑말랑 콘텐츠</a></li>
+          </ul>
+        </nav>
+        <ul class="menu flex">
+          <li class="menuItem"><a href="" class="question">문의하기</a></li>
+          <li class="menuItem"><a href="" class="button">로그인</a></li>
+          <li>
+            <a href="" class="menuButton"><span>전체메뉴보기</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="title">
+      <div class="inner">
+        <aside class="arrow hide">
+          <span class="prev">이전 슬라이드</span>
+          <span class="next">다음 슬라이드</span>
+        </aside>
+        <ul class="flex slide">
+          <li class="slideLi">아모개</li>
+          <li class="slideLi">지지</li>
+          <li class="slideLi">야야</li>
+          <li class="slideLi">마망&모아</li>
+          <li class="slideLi">육비</li>
+        </ul>
+        <div class="text">
+          <p>무엇이든 <span></span>쓰고 지우는 <span></span>바쁜 움직임</p>
+          <h2>말랑말랑무브먼트</h2>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="main">
+        <ul class="inner flex jusSpaBet">
+          <li class="flex fCol jusCen">
+            <h2>한글과컴퓨터 공식 캐릭터</h2>
+            <p>
+              국내 오피스 시장을 대표하는 한글과컴퓨터의 공식 캐릭터
+              말랑말랑무브먼트
+            </p>
+          </li>
+          <li class="flex fCol">
+            <h2>누적 회원 200만명</h2>
+            <p>
+              19년 3월 서비스 런칭 후 누적 회원수 200만명 돌파 (20년 3월 기준)
+            </p>
+          </li>
+          <li class="flex fCol">
+            <h2>글로벌 캐릭터로의 도약</h2>
+            <p>한컴그룹의 보유 기술과 캐릭터가 만나 글로벌 캐릭터 IP로 도약</p>
+          </li>
+        </ul>
+      </section>
+      <section id="story">
+        <div class="inner">
+          <article>
+            <h2>캐릭터 탄생 Sroty</h2>
+            <p>
+              말랑말랑무브먼트는 한컴그룹의 지우개와 지우개 똥, 연필심으로
+              이루어진 귀여운 필기구 캐릭터입니다.
+            </p>
+            <p>
+              한 번도 사용되지 못하고 잘려나간 연필심 육비가 연필깎이를 탈출해,
+              지우개들을 만나게 되면서 벌어지는 시끌벅적하고 왁자지껄한
+              이야기입니다
+            </p>
+            <a href="" class="plus">자세히 보기</a>
+          </article>
+        </div>
+      </section>
+      <section id="play">
+        <div class="inner">
+          <h2>말랑말랑 Play!</h2>
+          <p>
+            말랑말랑무브먼트 캐릭터 친구들과 함께 <span></span>한컴타자와 다양한
+            아케이드 게임으로 출발해볼까요?
+          </p>
+          <div class="articlePlace flex jusSpaBet">
+            <article>
+              <h3>한컴타자</h3>
+              <a href="" class="plus">바로가기</a>
+            </article>
+            <article>
+              <h3>말랑말랑 콘텐츠</h3>
+              <a href="" class="plus">바로가기</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="notice">
+        <div class="inner">
+          <div class="in">
+            <a
+              ><span>[공지] </span>[한컴스페이스] 결제시스템 점검 안내
+              (2022-07-25 오전9시 예정)</a
+            >
+          </div>
+          <a href="" class="more">더 보기 ></a>
+        </div>
+      </section>
+      <section id="question">
+        <div class="inner">
+          <h2>문의하기</h2>
+          <p>
+            말랑말랑플랫폼 서비스에 대해 궁금한 점이 있으신가요?<br />문의하기를
+            통해 궁금증을 해결하세요.
+          </p>
+          <a href="" class="question">문의하기</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="f-top flex alnCen">
+        <div class="inner flex jusSpaBet alnCen">
+          <h2>말랑말랑</h2>
+          <ul class="flex fWrap jusSpaBet">
+            <li><a href="">한컴타자</a></li>
+            <li><a href="">문의하기</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">한컴스페이스</a></li>
+          </ul>
+          <div class="select">
+            <h3>한컴계열사 사이트</h3>
+            <ul class="option-list">
+              <li class="option"><a href="">한컴계열사 사이트</a></li>
+              <li class="option"><a href="">한컴그룹</a></li>
+              <li class="option"><a href="">한글과 컴퓨터</a></li>
+              <li class="option"><a href="">한컴MDS</a></li>
+              <li class="option"><a href="">한컴인텔리전트</a></li>
+              <li class="option"><a href="">한컴위드</a></li>
+              <li class="option"><a href="">한컴인터프리</a></li>
+              <li class="option"><a href="">한컴라이프케업</a></li>
+              <li class="option"><a href="">한컴텔라딘</a></li>
+              <li class="option"><a href="">한컴로보틱스</a></li>
+              <li class="option"><a href="">한컴모빌리티</a></li>
+              <li class="option"><a href="">한컴아카데미</a></li>
+              <li class="option"><a href="">Accufly.AI</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="f-bottom">
+        <div class="inner flex jusSpaBet alnCen">
+          <div class="left">
+            <ul class="flex fWrap">
+              <li><span>(주)한글과컴퓨터</span></li>
+              <li><span>대표자: 변성준·김연수</span></li>
+              <li><span>사업자등록번호: 107-81-52230</span></li>
+              <li><span>통신판매신고번호: 2012-경기성남-1092</span></li>
+            </ul>
+            <adress
+              >주소: 경기도 성남시 분당구 대왕판교로 644번길 49 한컴타워
+              10층</adress
+            >
+            <ul class="flex fWrap">
+              <li><span>개인정보보호책임자: 박미영</span></li>
+              <li><span>E-mail: malangmalang@hancom.com</span></li>
+              <li><span>고객지원: 평일 9시~18시</span></li>
+            </ul>
+            <p>Copyright 2020. Hancom Inc. All rights reserved.</p>
+          </div>
+          <div class="right flex fCol alnEnd">
+            <ul class="social flex">
+              <li><a href="">페이스북</a></li>
+              <li><a href="">유튜브</a></li>
+            </ul>
+            <article>
+              <img src="img/ico-ISMS-P.png" alt="ISMS-P 인증마크" />
+              <p>
+                인증범위 : 오피스응용서비스, 교육 및 채용서비스<br />유효기간 :
+                2022.04.20 ~ 2025.04.19
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="quick">
+      <ul class="flex fCol alnCen">
+        <li><a href="">한컴타자</a></li>
+        <li><a href="">한컴스페이스</a></li>
+        <li><a href="">산성비</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

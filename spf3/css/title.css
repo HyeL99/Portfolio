@@ -1,0 +1,79 @@
+#title {
+  width: 100%;
+}
+#title div.inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 700px;
+}
+#title div.inner div.text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: calc(100px + 10%);
+  text-align: center;
+  font-size: 48px;
+  color: white;
+  font-weight: 100;
+}
+#title div.inner div.text p {
+}
+#title div.inner div.text h2 {
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.5s 0.5s;
+  line-height: 2;
+}
+#title div.inner ul.slide {
+}
+#title div.inner ul.slide li.slideLi {
+  height: 100vh;
+  background-color: violet;
+  width: calc(100% / 5);
+  position: relative;
+  min-height: 700px;
+}
+#title div.inner ul.slide li.slideLi span.modelName{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 22px;
+  bottom: 8%;
+  opacity: 0;
+  transform: translateY(30px);
+}
+#title div.inner ul.slide li.slideLi span.modelImage{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  bottom: 15%;
+  opacity: 0;
+  transform: translateY(30px);
+  margin:0 20%;
+}
+#title div.inner ul.slide li.slideLi:nth-of-type(2) {
+  background-color: #ff457e;
+}
+#title div.inner ul.slide li.slideLi:nth-of-type(3) {
+  background-color: #ff5353;
+}
+#title div.inner ul.slide li.slideLi:nth-of-type(4) {
+  background-color: #ff8f4a;
+}
+#title div.inner ul.slide li.slideLi:nth-of-type(5) {
+  background-color: #4694ff;
+}
+@keyframes upChaAni{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,67 @@
+.prev{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  opacity: 0.8;
+  animation: arrowAni 0.5s ease-out infinite alternate;
+  position: absolute;
+  left: 50px;
+  top: calc(50% + 40px);
+  z-index: 1;
+  font-size: 0;
+  border-top:transparent;
+  border-right: transparent;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.next{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  opacity: 0.8;
+  animation: arrowAni 0.5s ease-out infinite alternate;
+  position: absolute;
+  right: 50px;
+  top: calc(50% + 40px);
+  z-index: 1;
+  font-size: 0;
+  border-top:transparent;
+  border-left: transparent;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+.slick-dots{
+  bottom: 0px;
+}
+.slick-dots li{
+  z-index:1;
+  margin: 0;
+}
+.slick-dots li button::before{
+  display: none;
+}
+.slick-dots li button{
+  width: 7px !important;
+  height: 7px !important;
+  background: #fff;
+  opacity: 0.8;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding:0;
+  transition: all 0.2s;
+}
+.slick-dots li.slick-active button{
+  transform-origin: left 50% bottom 0;
+  transform: scale(1.5) translateY(-1px);
+}
+
+@keyframes arrowAni{
+  0%{
+    transform: rotate(-45deg) translateX(0);
+  }
+  100%{
+    transform: rotate(-45deg) translateX(-30px);
+  }
+}
