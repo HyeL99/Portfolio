@@ -1,0 +1,39 @@
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+}
+header .inner {
+  margin: 20px auto;
+}
+header div.menu{
+  position: relative;
+  padding-right: 50px;
+}
+header div.menu span{
+  font-size: 0;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  right:0;
+  top:12px;
+}
+header div.menu:hover span {
+  transform: translate(5px,3px);
+  transition-duration: 0.5s
+}
+header div.menu span::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 2px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top:calc(50%-6px);
+  right:0px;
+  top:-7px;
+}

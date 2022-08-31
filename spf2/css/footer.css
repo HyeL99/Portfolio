@@ -1,0 +1,46 @@
+footer .inner a{
+  position: fixed;
+  left:5%;
+  bottom: 50px;
+  transform-origin : 0 0;
+  transform: rotate(-90deg);
+  font-size: 12px;
+}
+
+footer article {
+  position: fixed;
+  right: 0px;
+  bottom: 30px;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+footer article p:last-child{
+  font-size: 12px;
+  color: #aaa;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+footer article p:last-child::before{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background: #31a552;
+  left: -10px;
+  top: calc(50% - 3px);
+}
+footer div.cardImage {
+  position: absolute;
+  top:2px;
+  left: 5px;
+}
+footer .cardText{
+  margin-left: 50px;
+}

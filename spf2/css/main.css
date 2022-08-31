@@ -1,0 +1,82 @@
+main{
+  margin-top: calc(5%);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main li{
+  
+}
+main li a{
+  
+}
+main li h2{
+  position: relative;
+}
+main li h2:hover{
+  color: transparent;
+}
+
+main li h2:hover::before{
+  content:"";
+  position: fixed;
+  width: 80%;
+  height: 0;
+  padding-bottom: 40%;
+  background: rgba(0,0,0,0.7) url("../img/main1.jpg") no-repeat center / 80%;
+  left:10%;
+  top:50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+main li h2::after{
+  content: "Concentable";
+   -webkit-text-stroke: 0px;
+  position: absolute;
+  top:0px;
+  left: 0;
+  color: transparent;
+}
+main li:nth-of-type(2) h2::after{
+  content: "Gongdok";
+}
+main li:nth-of-type(3) h2::after{
+  content: "Unframe";
+}
+main li:nth-of-type(4) h2::after{
+  content: "Rest API Development";
+}
+main li:nth-of-type(5) h2::after{
+  content: "Gounjae";
+}
+main li:nth-of-type(6) h2::after{
+  content: "Machtechness";
+}
+main li:nth-of-type(7) h2::after{
+  content: "Brainkium";
+}
+main li h2:hover::after{
+  top:10px;
+  left: 0;
+  color: white;
+  transition-duration: 0.3s;
+}
+main li:nth-of-type(2) h2:hover::before{
+  background: rgba(0,0,0,0.7) url("../img/main2.jpg") no-repeat center / 80%;
+}
+main li:nth-of-type(3) h2:hover::before{
+  background: rgba(0,0,0,0.7) url("../img/main3.jpg") no-repeat center / 80%;
+}
+main li:nth-of-type(4) h2:hover::before{
+  background: rgba(0,0,0,0.7) url("../img/main4.jpg") no-repeat center / 80%;
+}
+main li:nth-of-type(5) h2:hover::before{
+  background: rgba(0,0,0,0.7) url("../img/main5.jpg") no-repeat center / 80%;
+}
+main li:nth-of-type(6) h2:hover::before{
+  background: rgba(0,0,0,0.7) url("../img/main6.jpg") no-repeat center / 80%;
+}
+main li:nth-of-type(7) h2:hover::before{
+  background: rgba(0,0,0,0.7) url("../img/main7.jpg") no-repeat center / 80%;
+}

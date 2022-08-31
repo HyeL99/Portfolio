@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Black';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+body {
+  font-family: 'Pretendard-Regular';
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #000;
+  overflow-x: hidden;
+}
+body::before {
+  content:"";
+  display: block;
+  position: absolute;
+  background: url("../img/paper1.png") no-repeat center /cover;
+  animation: paperAni 0.5s linear infinite;
+  opacity: 0.3;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+
+}
+@keyframes paperAni {
+  0%{
+    background: #000 url("../img/paper1.png") no-repeat center /cover;
+  }
+  20%{
+    background: #000 url("../img/paper2.png") no-repeat center /cover;
+  }
+  40%{
+    background: #000 url("../img/paper3.png") no-repeat center /cover;
+  }
+  60%{
+    background: #000 url("../img/paper4.png") no-repeat center /cover;
+  }
+  80%{
+    background: #000 url("../img/paper5.png") no-repeat center /cover;
+  }
+  100%{
+    background: #000 url("../img/paper1.png") no-repeat center /cover;
+  }
+}
+button {
+  cursor: pointer;
+}
+h1{
+}
+h2 {
+  font-family: 'Pretendard-Black';
+  font-size: 70px;
+  line-height: 2;
+  color: transparent;
+   -webkit-text-stroke: 1px white;
+  opacity: 0.7;
+}
+h2:hover{
+  color: white;
+   -webkit-text-stroke: 0px;
+  opacity: 1;
+  cursor: url("../img/arrow.svg"), pointer;
+}
+h3 {
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.fCol {
+  flex-direction: column;
+}
+.jusCen {
+  justify-content: center;
+}
+.jusSpaBet {
+  justify-content: space-between;
+}
+.alnCen {
+  align-items: center;
+}
+.alnEnd {
+  align-items: flex-end;
+}
+.jusEnd {
+  justify-content: flex-end;
+}
+.fWrap {
+  flex-wrap: wrap;
+}
+
+/* commen */
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+.innerUl {
+  display: none;
+}
