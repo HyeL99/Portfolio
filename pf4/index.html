@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pf04. LONELY PLANET</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/basis.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/1c40201b36.js" crossorigin="anonymous"></script>
+    
+    <!-- common script -->
+    <script type="text/javascript">
+      $(function(){
+        $('a').click(function(){return false;});
+        $('#title .navbar ul li:eq(0)').addClass('active');
+
+        $('#title .navbar ul li a').on('click',function(){
+          $(this).parent('li').addClass('active');
+          $(this).parent('li').siblings('li').removeClass('active');
+        });
+
+        $('#title .navbar ul li').hover(function(){
+          $(this).addClass('hover');
+        },function(){
+          $(this).removeClass('hover');
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner flex alnCen jusSpaBet">
+        <h1><a href="#">lonely planet</a></h1>
+        <nav>
+          <ul class="gnb flex">
+            <li class="gnbList">
+              <a href="#">destinations</a>
+              <ul class="gnbSub">
+                <li class="gnbSubList titleItem"><a href="#">Explore the Unexpexted<span>FEATURED</span></a></li>
+                <li class="gnbSubList"><a href="#">Africa</a></li>
+                <li class="gnbSubList"><a href="#">Antarctica</a></li>
+                <li class="gnbSubList"><a href="#">Asia</a></li>
+                <li class="gnbSubList"><a href="#">Caribbean Islands</a></li>
+                <li class="gnbSubList"><a href="#">Central America</a></li>
+                <li class="gnbSubList"><a href="#">Europe</a></li>
+                <li class="gnbSubList"><a href="#">Middle East</a></li>
+                <li class="gnbSubList"><a href="#">North America</a></li>
+                <li class="gnbSubList"><a href="#">Pacific</a></li>
+                <li class="gnbSubList"><a href="#">South America</a></li>
+                <li class="gnbSubList more"><a href="#">SEE ALL DESTICATIONS</a></li>
+              </ul>
+            </li>
+            <li class="gnbList">
+              <a href="#">Stories</a>
+              <ul class="gnbSub">
+                <li class="gnbSubList titleItem"><a href="#">Lonely Planet Newsletter<span>FEATURED</span></a></li>
+                <li class="gnbSubList"><a href="#">Adventure</a></li>
+                <li class="gnbSubList"><a href="#">Hiking and walking</a></li>
+                <li class="gnbSubList"><a href="#">Sustainability</a></li>
+                <li class="gnbSubList"><a href="#">Budget</a></li>
+                <li class="gnbSubList"><a href="#">Food and drink</a></li>
+                <li class="gnbSubList"><a href="#">Beaches, coasts and islands</a></li>
+                <li class="gnbSubList"><a href="#">Road trips</a></li>
+                <li class="gnbSubList"><a href="#">Art and culture</a></li>
+                <li class="gnbSubList more"><a href="#">SEE ALL STORIES</a></li>
+              </ul>
+            </li>
+            <li class="gnbList">
+              <a href="#">Shop</a>
+              <ul class="gnbSub">
+                <li class="gnbSubList titleItem"><a href="#">New Book Releases<span>FEATURED</span></a></li>
+                <li class="gnbSubList"><a href="#">Destination guides</a></li>
+                <li class="gnbSubList"><a href="#">Pictorial & gifts</a></li>
+                <li class="gnbSubList"><a href="#">Phrasebooks</a></li>
+                <li class="gnbSubList"><a href="#">Lonely Planet Kids</a></li>
+                <li class="gnbSubList more"><a href="#">SEE ALL SHOP</a></li>
+              </ul>
+            </li>
+            <li class="gnbList">
+              <a href="#">Subscribe</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="title">
+      <div class="inner flex fCol jusCen alnCen">
+        <h2>Discover story-worthy <br />travel moments</h2>
+        <a href="#">9 of the best beaches in Lagos, Nigeria: come join the party</a>
+      </div>
+      <div class="navbar">
+        <div class="inner">
+          <ul class="flex jusCen">
+            <li><a href="#">HOME</a><span>underline</span></li>
+            <li><a href="#">TOP DESTINATIONS</a><span>underline</span></li>
+            <li><a href="#">TRAVEL INTERESTS</a><span>underline</span></li>
+            <li><a href="#">SHOP</a><span>underline</span></li>
+            <li><a href="#">ABOUT US</a><span>underline</span></li>
+          </ul>
+        </div>
+      </div>  <!-- end navbar -->
+    </div>
+    <main>
+      <section id="main01">
+        <div class="inner flex fCol jusCen">
+          <h2>PLAN  YOUR  TRIP</h2>
+          <p>Where to next? <span>underline</span></p>
+          <div class="cardSpace flex jusSpaBet">
+            <a href="#">
+              <img src="./assets/img/plan01.png" alt="Devon & Cornwall">
+              <p>ENGLAND</p>
+              <h3>Devon & Cornwall</h3>
+            </a>
+            <a href="#">
+              <img src="./assets/img/plan02.png" alt="Chiapas">
+              <p>MEXICO</p>
+              <h3>Chiapas</h3>
+            </a>
+            <a href="#">
+              <img src="./assets/img/plan03.png" alt="Eastern Siberua">
+              <p>Russia</p>
+              <h3>Eastern Siberua</h3>
+            </a>
+            <a href="#">
+              <img src="./assets/img/plan04.png" alt="Sinai">
+              <p>Egypt</p>
+              <h3>Sinai</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="main02" >
+        <div class="inner flex jusSpaBet alnCen">
+          <a href="#">
+            <img src="./assets/img/icon01.png" alt="London image">
+            <h2>London</h2>
+          </a>
+          <a href="#">
+            <img src="./assets/img/icon02.png" alt="Paris image">
+            <h2>Paris</h2>
+          </a>
+          <a href="#">
+            <img src="./assets/img/icon03.png" alt="New York image">
+            <h2>New York</h2>
+          </a>
+          <a href="#">
+            <img src="./assets/img/icon04.png" alt="Roma image">
+            <h2>Roma</h2>
+          </a>
+          <a href="#">
+            <img src="./assets/img/icon05.png" alt="Moscow image">
+            <h2>Moscow</h2>
+          </a>
+          <a href="#">
+            <img src="./assets/img/icon06.png" alt="Reykjavík image">
+            <h2>Reykjavík</h2>
+          </a>
+        </div>
+      </section>
+      <section id="main03">
+        <div class="inner">
+          <h2>TRAVEL STORIES AND NEWS</h2>
+          <p>Explore our latest story</p>
+          <div class="content">
+            <img src="./assets/img/story01.png" alt="story01 iamge" class="img01">
+            <img src="./assets/img/story02.png" alt="story02 image" class="img02">
+            <img src="./assets/img/story03.png" alt="story03 iamge" class="img03">
+            <div class="text">
+              <h3>What to know before you visit Seoul</h3>
+              <p>Jordan McCutcheon<span>Aug 20, 2022</span></p>
+              <p>
+                <span>W</span>hen I moved to Seoul, I had a clear plan that I was determined to stick to – teach English for one year and then move on to explore other parts of the world. But my plan didn't account for the way Seoul captivated and delighted me, and that single year I was committed to soon rolled into two, three, and then, ultimately, six years.
+                <br /><br />
+                <span>F</span>rom the moment I stepped off the crowded bus from the airport and onto its bustling streets, I became enamored with its colorful neighborhoods, eclectic markets and diverse nightlife.
+                <br /><br />
+                <span>H</span>ere are my top insider tips to make your first trip to Seoul as special as mine was.
+              </p>
+              <a href="#">Read More</a>
+              <!-- <ul class="social flex">
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">인스타그램</a></li>
+                <li><a href="#">트위터</a></li>
+                <li><a href="#">틱톡</a></li>
+              </ul> -->
+              <ul class="social flex">
+                <li><a href="#">페이스북<i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#">인스타그램<i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#">트위터<i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#">틱톡<i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main04">
+        <div class="inner">
+          <h2>#lonelyplanet<span></span></h2>
+          <div class="cardSpace flex jusSpaBet">
+            <article>
+              <a href="#">
+                <img src="./assets/img/insta01.png" alt="insta01 image">
+                <p>@wanderlust_fabiana</p>
+              </a>
+            </article>
+            <article>
+              <a href="#">
+                <img src="./assets/img/insta02.png" alt="insta02 image">
+                <p>@pandeyrr</p>
+              </a>
+            </article>
+            <article>
+              <a href="#">
+                <img src="./assets/img/insta03.png" alt="insta03 image">
+                <p>@unchartedbackpacker</p>
+              </a>
+            </article>
+            <article>
+              <a href="#">
+                <img src="./assets/img/insta04.png" alt="insta04 image">
+                <p>@richardwhitetravels</p>
+              </a>
+            </article>
+            <article>
+              <a href="#">
+                <img src="./assets/img/insta05.png" alt="insta05 image">
+                <p>@les_carnets_de_mel</p>
+              </a>
+            </article>
+            <article>
+              <a href="#">
+                <img src="./assets/img/insta06.png" alt="insta06 image">
+                <p>@dominik.kobler</p>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="inner">
+        <h2>lonely planet</h2>
+        <p>© 2022 Lonely Planet. All rights reserved. No part of this site may be reproduced without our written permission.</p>
+      </div>
+    </footer>
+  </body>
+</html>
