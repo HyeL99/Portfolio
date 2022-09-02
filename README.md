@@ -8,6 +8,9 @@ grid system을 이용한 사이트 연습
 ## pf3. 어반 런드렛 사이트
 jQuery, 반응형을 이용한 사이트 연습
 
+## pf4. lonely planet 사이트
+flex를 이용한 사이트 연습
+
 ## spf1. 새미네부엌
 jQuery, 반응형을 이용한 사이트 연습
 
