@@ -1,0 +1,68 @@
+.subTitle{
+    display: block;
+    line-height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #b9b9b9;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+#staff {
+    background: #efefef;
+}
+#staff div#staffInner {
+}
+#staff div#staffInner p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.04rem;
+}
+#staff div#staffInner div.searchPlace {
+    margin-top: 10px;
+    background: #fff;
+    width: 100%;
+    padding: 25px 20px 15px;
+    border: 1px solid #ddd;
+}
+#staff div#staffInner div.searchPlace input {
+    width: 85%;
+    border:0;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    outline-color: blue;
+    padding: 0 10px;
+    font-size: 13px;
+}
+#staff div#staffInner div.searchPlace input::placeholder{
+    color: #666;
+}
+#staff div#staffInner div.searchPlace a.serchBtn {
+    background: #666;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+#staff div#staffInner ul {
+    margin-top: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+#staff div#staffInner ul li {
+    width: calc(50% - 5px);
+    border: 1px solid #ddd;
+}
+#staff div#staffInner ul li a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: relative;;
+    background-color: white;
+}
+#staff div#staffInner ul li a img {
+    width: 50%;
+    height: 80%;
+    object-fit: contain;
+}

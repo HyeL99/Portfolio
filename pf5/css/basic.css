@@ -1,0 +1,194 @@
+
+body{
+    overflow: hidden;
+    width: 100%;
+    min-width: 360px;   /* 시판 휴대폰 중 가장 작은 화면 가로 길이 */
+}
+#wrap{
+    transition: all 0.7s;
+}
+#wrap.active::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+/* header */
+header div.inner{
+    height: 45px;
+    background: #33353f;
+}
+header a.lnbBtn {
+    z-index: 1;
+}
+header h1 {
+    line-height: 1;
+}
+header img {
+    height: 45px;
+}
+
+
+/* main */
+main {
+}
+main div.inner {
+    height: 100%;
+    row-gap: 10px;
+    padding: 10px;
+}
+main div.inner div.top {
+    flex:2;
+    column-gap: 10px;
+}
+main div.inner div.top section {
+    background: #4ab8bc;
+    flex: 1;
+}
+main div.inner div.top div.right {
+    flex:1;
+    row-gap: 10px;
+}
+main div.inner div.top div.right section {
+    background: #589dd2;
+}
+main div.inner div.top div.right section:nth-of-type(2){
+    background: #ff912f;
+}
+main div.inner div.bottom {
+    flex:1;
+    column-gap: 10px;
+}
+main div.inner div.bottom section {
+    background: #589dd2;
+    flex:1;
+}
+main div.inner div.bottom section:nth-of-type(2) {
+    background: #8dca35;
+}
+main section a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+main img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    height: 80%;
+    object-fit: contain;
+}
+
+
+/* footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 25px 10px 30px;
+}
+footer ul.fTop {
+    column-gap: 2px;
+}
+footer ul.fTop li {
+    flex:1;
+    background: #535357;
+    text-align: center;
+    font-size: 12px;
+    line-height: 33px;
+    margin-bottom: 20px;
+}
+footer ul.fTop li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+footer ul.fTop li a:not(:first-child){
+    border-left: 1px solid #fff;
+}
+footer div.fBottom {
+}
+footer div.fBottom div.left {
+}
+footer div.fBottom div.left div.social {
+    column-gap: 10px;
+}
+footer div.fBottom div.left div.social a {
+    font-size: 22px;
+    font-weight: 700;
+}
+footer div.fBottom div.left div.social a.youtube img,
+footer div.fBottom div.left div.social a.blog img {
+    height: 25px;
+}
+footer div.fBottom div.left address {
+    font-size: 10px;
+    margin-top: 10px;
+}
+footer div.fBottom div.right {
+}
+footer div.fBottom div.right a.button {
+    background-color: #000;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+/* lnb */
+#lnb {
+    width: 274px;
+    position: fixed;
+    top: 0;
+    left: -274px;
+    height: 100%;
+    background: #f1f1f1
+}
+#lnb div.lnbLogin {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+#lnb div.lnbLogin p {
+    margin-bottom: 20px;
+    text-align: left;
+    white-space: nowrap;
+}
+#lnb div.lnbLogin img {
+    width: 100%;
+}
+#lnb ul.lnbList {
+}
+#lnb ul.lnbList li:last-child {
+    border-bottom: 1px solid #ddd;
+}
+#lnb ul.lnbList li a {
+}
+#lnb ul.lnbList li a img {
+    width: 100%;
+}
+#lnb div.lnbRes {
+    width: 100%;
+    margin-top: 50px;
+}
+#lnb div.lnbRes a {
+    display: block;;
+    padding: 0 20px;
+}
+#lnb div.lnbRes a img {
+    width: 100%;
+}
+
+.active{
+    transform: translateX(274px);
+}
+.active header .lnbBtn img{
+    content: url(../assets/img/bg_header_lnb_active.png);
+}
