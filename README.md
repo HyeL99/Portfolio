@@ -22,5 +22,3 @@ jQuery, 반응형을 이용한 사이트 연습
 
 ## spf3. malamgmalang
 jQuery, 반응형을 이용한 사이트 연습
-
-## naenaeng
