@@ -197,8 +197,8 @@ main article div.box div.articleContents img.round {
 #lnb {
     position: fixed;
     top: 0;
-    left: -380px;
-    width: 380px;
+    left: -304px;
+    width: 304px;
     background: #fff;
     bottom: 0;
     overflow-y:scroll;
@@ -360,7 +360,7 @@ main article div.box div.articleContents img.round {
     bottom: 0px;
     white-space: nowrap;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     transform: translateX(-50%);
     color: #888;
 }
