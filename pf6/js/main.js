@@ -1,5 +1,8 @@
 $(function(){
     $(document).click(function(){
+        $('a').click(function(){
+            return false;
+        });
         let lnb = $('#lnb');
         if($('#gnbBtn span').is(event.target) || $('#gnbBtn').is(event.target)){
             $('#lnb').css({'transform':'translateX(100%)'})

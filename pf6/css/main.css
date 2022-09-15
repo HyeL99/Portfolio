@@ -130,6 +130,7 @@ header nav ul li.active::before{
 }
 header nav ul li.active a span{
     font-weight: 700;
+    white-space: nowrap;
 }
 header nav ul li a {
     display: block;
