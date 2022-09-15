@@ -204,6 +204,12 @@ main article div.box div.articleContents img.round {
     box-sizing: content-box;
     transition: all 0.5s;
     z-index: 1;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    
+}
+#lnb::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
 }
 #lnb div.inner {
     padding: 35px 0px;
