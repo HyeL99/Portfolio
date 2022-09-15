@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf06.KakaoFriends-MOBILE</title>
+    
+    <!-- favicon 삽입 -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <!-- defer : 화면 로딩 후 스크립트 실행 -->
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="hTop flex jusSpaBet alnCen">
+                <div class="lnbBtn">
+                    <button id="gnbBtn"><span class="icon new">메뉴 열기</span></button>
+                </div>
+                <h1><a href="index.html"><span>KAKAO FRIENDS</span></a></h1>
+                <div class="menu flex alnCen">
+                    <button><a href="#" class="search icon"><span>검색</span></a></button>
+                    <button><a href="#" class="language icon"><span>언어선택</span></a></button>
+                </div>
+            </div>
+            <nav class="hBottom">
+                <ul class="flex jusSpaBet">
+                    <li><a href="index.html"><span>홈</span></a></li>
+                    <li><a href="best.html"><span class="new">베스트</span></a></li>
+                    <li class="active"><a href="content.html"><span>콘텐츠</span></a></li>
+                    <li><a href="my.html"><span>마이</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <div class="box">
+                    <div class="articleHeader flex alnCen">
+                        <a href="#" class="profile chunsik">춘식이</a>
+                        <div class="info flex fCol">
+                            <strong>춘식이</strong>
+                            <span class="uploadTime">1일전</span>
+                        </div>
+                    </div>
+                    <div class="articleContents">
+                        <img src="./assets/img/contents/main01.jpg" alt="" class="round">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="box">
+                    <div class="articleHeader flex alnCen">
+                        <a href="#" class="profile apeach">어피치</a>
+                        <div class="info flex fCol">
+                            <strong>어피치</strong>
+                            <span class="uploadTime">2022.06.10</span>
+                        </div>
+                    </div>
+                    <div class="articleContents">
+                        <img src="./assets/img/contents/main02.jpg" alt="" class="round">
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+
+        </footer>
+        <div id="lnbBg"></div>
+        <div id="lnb">
+            <div class="inner">
+                <div class="infoUser flex jusSpaBet">
+                    <a href="#" class="login"><u>로그인</u>이 필요해요!</a>
+                    <a href="#" class="check">비회원 주문조회<span class="icon">화살표</span></a>
+                </div>
+                <ul class="listMenu">
+                    <li class='lnbList'><a href="#"><span>장바구니 내역</span></a></li>
+                    <li class='lnbList underline'><a href="#" class="popup"><span>주문·배송 내역</span></a></li>
+                    <li class='lnbList'>
+                        <a href="#"><span>캐릭터</span></a>
+                        <button class="menuBtn"><span class="icon">화살표</span></button>
+                        <div class="menuWrap hide">
+                            <ul class="lnbSub char flex fWrap hide">
+                                <li><a href="#"><img src="assets/img/profile/non-Lion.png" alt="라이언"></a><span>라이언</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Apeach.png" alt=""></a><span>어피치</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Muji.png" alt=""></a><span>무지</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Frodo.png" alt=""></a><span>프로도</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Neo.png" alt=""></a><span>네오</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Tube.png" alt=""></a><span>튜브</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-J.png" alt=""></a><span>제이지</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Corn.png" alt=""></a><span>콘</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-ChunSik.png" alt=""></a><span>춘식이</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Jordy.png" alt=""></a><span>죠르디</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Scappy.png" alt=""></a><span>스카피</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Angmond.png" alt=""></a><span>앙몬드</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Penda.png" alt=""></a><span>팬다주니어</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Kero.png" alt=""></a><span>케로&베로니</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Cob.png" alt=""></a><span>콥</span></li>
+                                <li><a href="#"><img src="assets/img/profile/non-Bbanya.png" alt=""></a><span>빠냐</span></li>
+                                <li><a href="#"><img src="assets/img/profile/zone.jpg" alt=""></a><span>캐릭터관</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='lnbList underline'>
+                        <a href="#"><span>카테고리</span></a>
+                        <button class="menuBtn"><span class="icon">화살표</span></button>
+                        <div class="menuWrap hide">
+                            <ul class="lnbSub cate flex fWrap hide">
+                                <li><a href="">전체</a></li>
+                                <li><a href="">토이</a></li>
+                                <li><a href="">리빙</a></li>
+                                <li><a href="">잡화</a></li>
+                                <li><a href="">문구</a></li>
+                                <li><a href="">의류</a></li>
+                                <li><a href="">디지털</a></li>
+                                <li><a href="">여행/레져</a></li>
+                                <li><a href="">식품</a></li>
+                                <li><a href="">테마 기획전</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class='lnbList'><a href="#"><span class="new">프렌즈 별다꾸</span></a></li>
+                    <li class='lnbList underline'><a href="#"><span>배경화면</span></a></li>
+                    <li class='lnbList'><a href="#"><span class="new">공지사항</span></a></li>
+                    <li class='lnbList'><a href="#"><span>고객센터</span></a></li>
+                    <li class='lnbList underline'><a href="#"><span>기프트카드 조회·환불</span></a></li>
+                    <li class='lnbList'><a href="#"><span>카카오프렌즈샵 안내</span></a></li>
+                </ul>
+                <div class="banner underline">
+                    <a href="#">
+                        <img src="assets/img/banner.png" alt="카톡 추가하고 프렌즈 소식을 받아보세요!">
+                    </a>
+                </div>
+                <div class="login"><a href="#"><span class="icon"></span>로그인</a></div>
+            </div>
+        </div>
+        <div id="loginPopup">
+            <div class="inner">
+                <button id="popupClose" onclick="closePopup()"><span class="icon">팝업닫기</span></button>
+                <img src="assets/img/popup.png" alt="로그인 안내 팝업">
+                <strong>앗! 로그인</strong>
+                <p>앗! 깜빡, 로그인하고 이용하기💛</p>
+                <a  id="popupLogin" href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fshopping-userauth-web.kakao.com%252Fkauth%252Fcallback%26state%3DeyJyZWRpcmVjdFVybCI6Imh0dHBzOi8vc3RvcmUua2FrYW9mcmllbmRzLmNvbS9vYXV0aDIvY2FsbGJhY2sva2FrYW8iLCJjaGFubmVsIjoiRlJJRU5EUyIsInN0YXRlIjoicnc2MHdETUF3emxBeWowWEtKTG1mQ3M1YlVDT05sUnVWUmIzWUFKV2pWZz0ifQ%26through_account%3Dtrue%26client_id%3D98020c3772c56cf7faa6aceb97b0722d"><span class="icon"></span>로그인하기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

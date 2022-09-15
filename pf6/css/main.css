@@ -1,0 +1,471 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap');
+body{
+    background: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#container{
+    background-image: linear-gradient(to bottom, #fff 50%, rgb(100, 117, 202) 75%, rgb(24, 42, 108));
+    max-width: 600px;
+    min-width: 214px;
+    margin: 0 auto;
+    height: 2000px;
+}
+button{
+    cursor: pointer;
+}
+.icon{
+    display: block;
+    background: url('../assets/img/ico_friends.png') no-repeat 0 0 / 700px 800px;
+    font-size: 0px;
+}
+.new {
+    position: relative;
+}
+.new::before{
+    content:"new";
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #ff447f;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    right: -10px;
+    top: 0;
+    font-size:0;
+}
+/* header */
+header {
+    width: 100%;
+    max-width: 600px;
+    min-width: 214px;
+    margin: 0 auto;
+    position: fixed;
+    left:50%;
+    top:0;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+header div.hTop {
+    height: 46px;
+}
+header div.hTop div.lnbBtn {
+    flex:1;
+    background: transparent;
+    border: 0px;
+    text-align: start;
+}
+header div.hTop div.lnbBtn button#gnbBtn{
+    background: transparent;
+    border: 0px;
+    vertical-align: middle;
+    padding: 5px;
+}
+header div.hTop div.lnbBtn button#gnbBtn span {
+    width: 18px;
+    height: 18px;
+    background-position: -523px -63px;
+}
+header div.hTop button.gnbBtn span::before {
+    right: -2.5px;
+    top: -3px;
+}
+header div.hTop h1 {
+    flex:3;
+    height: 46px;
+    text-align: center;
+    line-height: 0;
+}
+header div.hTop h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/img/logo_kakaofriends.png') no-repeat center / 147px 24px;
+    font-size: 0;
+
+}
+header div.hTop div.menu {
+    flex:1;
+    justify-content: flex-end;
+    text-align: end;
+
+}
+header div.hTop div.menu button {
+    margin-left: 10px;
+    background: transparent;
+    border: 0;
+    padding: 5px;
+}
+header div.hTop div.menu button a.search {
+    width: 18px;
+    height: 18px;
+    background-position: -43px -23px;
+}
+header div.hTop div.menu button a.language {
+    width: 18px;
+    height: 18px;
+    background-position: -443px -63px;
+}
+header nav {}
+header nav ul {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+header nav ul li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+header nav ul li.active::before{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:0;
+    border-top: 5px solid #000;
+    left:0;
+    bottom:0;
+}
+header nav ul li.active a span{
+    font-weight: 700;
+}
+header nav ul li a {
+    display: block;
+    line-height: 50px;
+    width: 100%;
+    font-weight: 500;
+}
+/* main css */
+main {
+    padding-top: 100px;
+}
+main article {
+}
+main article div.box {
+    padding: 20px;
+}
+main article div.box div.articleHeader {
+    padding-bottom: 16px;
+}
+main article div.box div.articleHeader a.profile {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+main article div.box div.articleHeader a.chunsik {
+    background: url('../assets/img/profile/ChunSik.png') no-repeat center / cover;
+}
+main article div.box div.articleHeader a.apeach {
+    background: url('../assets/img/profile/Apeach.png') no-repeat center / cover;
+}
+main article div.box div.articleHeader div.info {
+}
+main article div.box div.articleHeader div.info strong {
+}
+main article div.box div.articleHeader div.info span {
+    color:#909092;
+    font-size: 13px;
+    line-height: 15px;
+}
+main article div.box div.articleContents {
+}
+main article div.box div.articleContents img {
+    width: 100%;
+}
+main article div.box div.articleContents img.round {
+    border-radius: 15px;
+}
+
+/* lnb css */
+#lnbBg{
+    position: fixed;
+    display: none;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index:1;
+    opacity: 0.5;
+    transition: none 0.5s;
+}
+#lnb {
+    position: fixed;
+    top: 0;
+    left: -380px;
+    width: 380px;
+    background: #fff;
+    bottom: 0;
+    overflow-y:scroll;
+    box-sizing: content-box;
+    transition: all 0.5s;
+    z-index: 1;
+}
+#lnb div.inner {
+    padding: 35px 0px;
+}
+#lnb div.inner div.infoUser {
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+#lnb div.inner div.infoUser a.login {
+    font-weight: 900;
+    line-height: 15px;
+}
+#lnb div.inner div.infoUser a.check {
+    font-size: 14px;
+    position: relative;
+    padding-right: 15px;
+    line-height: 15px;
+    font-weight: 500;
+}
+#lnb div.inner div.infoUser a.check span{
+    width:7px;
+    height: 11px;
+    background-position: -145px -2px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right:0;
+    top: calc(50% - 5px);
+}
+#lnb div.inner ul.listMenu {
+    font-weight: 700;
+}
+#lnb div.inner ul.listMenu li.lnbList {
+    position: relative;
+    padding: 0 20px;
+}
+#lnb div.inner ul.listMenu li.lnbList button{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+}
+#lnb div.inner ul.listMenu li.lnbList button span {
+    display: block;
+    width: 12px;
+    height: 7px;
+    background-position: -182px -5px; 
+}
+#lnb div.inner ul.listMenu li.active button span {
+    display: block;
+    width: 11px;
+    height: 7px;
+    background-position: -163px -4px; 
+}
+#lnb div.inner ul.listMenu li.underline{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#lnb div.inner ul.listMenu li.lnbList a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#lnb div.inner ul.listMenu li.lnbList a span {
+    line-height: 48px;
+    font-weight: 500;
+}
+#lnb div.inner ul.listMenu li.lnbList ul.lnbSub {
+    display: flex;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+#lnb div.inner ul.listMenu li.active ul.lnbSub {
+    display: flex;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 30px;
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li {
+    width: calc((100% - 25px * 4) / 5);
+    position: relative;
+    padding-bottom: 25px;
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li a {
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li a img {
+    width: 100%;
+    border-radius: 50%;
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(1):hover a img{
+    content: url(../assets/img/profile/Lion.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(2):hover a img{
+    content: url(../assets/img/profile/Apeach.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(3):hover a img{
+    content: url(../assets/img/profile/Muji.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(4):hover a img{
+    content: url(../assets/img/profile/Frodo.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(5):hover a img{
+    content: url(../assets/img/profile/Neo.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(6):hover a img{
+    content: url(../assets/img/profile/Tube.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(7):hover a img{
+    content: url(../assets/img/profile/J.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(8):hover a img{
+    content: url(../assets/img/profile/Corn.jpg);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(9):hover a img{
+    content: url(../assets/img/profile/ChunSik.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(10):hover a img{
+    content: url(../assets/img/profile/Jordy.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(11):hover a img{
+    content: url(../assets/img/profile/Scappy.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(12):hover a img{
+    content: url(../assets/img/profile/Angmond.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(13):hover a img{
+    content: url(../assets/img/profile/Penda.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(14):hover a img{
+    content: url(../assets/img/profile/Kero.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(15):hover a img{
+    content: url(../assets/img/profile/Cob.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(16):hover a img{
+    content: url(../assets/img/profile/Bbanya.png);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li:nth-of-type(17):hover a img{
+    content: url(../assets/img/profile/zone.jpg);
+}
+#lnb div.inner ul.listMenu li.lnbList ul.char li span {
+    position: absolute;
+    left:50%;
+    bottom: 0px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 12px;
+    transform: translateX(-50%);
+    color: #888;
+}
+#lnb div.inner ul.listMenu li.lnbList ul.cate{
+    row-gap: 0px;
+    column-gap: 0px;
+}
+#lnb div.inner ul.listMenu li.lnbList ul.cate li {
+    width: 50%;
+}
+#lnb div.inner ul.listMenu li.lnbList ul.cate li a {
+    display: block;
+    color: #747475;
+    line-height: 20px;
+    padding: 12px 0;
+    font-weight: 500;
+}
+#lnb div.inner div.banner {
+    padding: 16px 20px 32px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+#lnb div.inner div.banner a{
+}
+#lnb div.inner div.banner a img {
+    width: 100%;
+    border-radius: 10px;
+}
+#lnb div.inner div.login {
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #909092;
+    font-size: 14px;
+}
+#lnb div.inner div.login a{
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+}
+#lnb div.inner div.login a span{
+    display: inline-block;
+    width: 17px;
+    height: 19px;
+    background-position: -564px -22px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+#loginPopup {
+    display: none;
+}
+#loginPopup div.inner {
+    position:fixed;
+    text-align: center;
+    width: 310px;
+    background: #fff;
+    margin: 0 auto;
+    top:0;
+    left: calc(50% - 155px);
+    top: calc(50% - 165px);
+    box-sizing: border-box;
+    padding: 30px 30px 40px;
+    border-radius: 15px;
+    z-index: 1;
+}
+#loginPopup div.inner button#popupClose {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: transparent;
+    border:0;
+    outline:0;
+}
+#loginPopup div.inner button#popupClose span {
+    display: block;
+    width:24px;
+    height: 24px;
+    background: url('../assets/img/ico_close.png') no-repeat center / cover;
+    font-size: 0;
+}
+#loginPopup div.inner img {
+    padding: 10px 0;
+    display: block;
+    width: 128px;
+    margin: 0 auto;
+}
+#loginPopup div.inner strong {
+    font-size: 18px;
+}
+#loginPopup div.inner p {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 16px;
+}
+#loginPopup div.inner a#popupLogin{
+    display: block;
+    width: 220px;
+    height: 48px;
+    text-align: center;
+    background: #ffeb00;
+    border:0;
+    border-radius: 24px;
+    line-height: 46px;
+}
+#loginPopup div.inner a#popupLogin span {
+    width: 20px;
+    height: 18px;
+    background-position: -482px -23px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.hide {
+    display: none;
+}
