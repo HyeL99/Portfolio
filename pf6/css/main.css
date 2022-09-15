@@ -67,7 +67,7 @@ header div.hTop div.lnbBtn button#gnbBtn span {
     height: 18px;
     background-position: -523px -63px;
 }
-header div.hTop button#gnbBtn span::before {
+header div.hTop button#gnbBtn span.new::before {
     right: -3.5px;
     top: -3px;
 }
