@@ -248,7 +248,7 @@ main article div.box div.articleContents img.round {
 }
 #lnb div.inner ul.listMenu li.lnbList button{
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 10px;
     background: transparent;
     border: 0;
