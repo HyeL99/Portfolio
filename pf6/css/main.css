@@ -49,6 +49,7 @@ header {
 }
 header div.hTop {
     height: 46px;
+    padding: 0 10px;
 }
 header div.hTop div.lnbBtn {
     flex:1;
