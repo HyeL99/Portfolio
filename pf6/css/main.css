@@ -136,6 +136,8 @@ header nav ul li a {
     line-height: 50px;
     width: 100%;
     font-weight: 500;
+}
+header nav ul li a span {
     white-space: nowrap;
 }
 /* main css */
