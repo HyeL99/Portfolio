@@ -1,0 +1,76 @@
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: honeydew;
+    height: 100px;
+}
+header .inner {
+    position: relative;
+}
+header .inner h1 {
+    float: left;
+    line-height: 100px;
+}
+header .inner h1 i {
+}
+header .inner h1 span {
+}
+header .inner nav {
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    line-height: 100px;
+}
+header .inner nav ul {
+}
+header .inner nav ul::after{
+    content:"";
+    display: inline-block;
+    clear: both;
+    white-space: nowrap;
+}
+header .inner nav ul li {
+    float: left;
+}
+header .inner nav ul li a {
+    display: block;
+    margin: 0 15px;
+    font-size: 18px;
+}
+header .inner a.menuBtn {
+    display: none;
+    float: left;
+    line-height: 100px;
+}
+header .inner a.menuBtn i {
+}
+header .inner a.menuBtn span {
+    font-size: 0;
+}
+header .inner a.sign {
+    float: right;
+    line-height: 100px;
+}
+header .inner a.sign i {
+}
+header .inner a.sign span {
+}
+header .inner nav button#menuClose{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: transparent;
+    border: 0;
+    display: none;
+    font-size: 18px;
+    color: cornflowerblue;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+}
+header .inner nav button#menuClose span {
+    font-size: 0;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf07.반응형 레이아웃 연습</title>
+    
+    <!-- favicon 삽입 -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/da8c886e38.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <!-- defer : 화면 로딩 후 스크립트 실행 -->
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="inner">
+                <h1><i class="fa-solid fa-camera-retro"></i><span>Responsive</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Menu1</a></li>
+                        <li><a href="#">Menu2</a></li>
+                        <li><a href="#">Menu3</a></li>
+                        <li><a href="#">Menu4</a></li>
+                        <li><a href="#">Menu5</a></li>
+                        <li><a href="#">Menu6</a></li>
+                        <li><a href="#">Menu7</a></li>
+                    </ul>
+                    <button id="menuClose" onclick="closeNav()"><i class="fa-solid fa-xmark"></i><span>메뉴닫기</span></button>
+                </nav>
+                <a href="#" class="menuBtn" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i><span>메뉴열기</span></a>
+                <a href="#" class="sign"><i class="fa-solid fa-right-to-bracket"></i><span> Sign in</span></a>
+            </div>
+        </header>
+        <div id="title">
+            Title
+        </div>
+        <main>
+            <div id="content" class="inner">
+                <section class="con1">Section1</section>
+                <section class="con2">Section2</section>
+                <section class="con3">Section3</section>
+                <section class="con4">Section4</section>
+            </div>
+        </main>
+        <footer>
+            <div class="inner">
+                Responsive Practice
+            </div>
+        </footer>
+    </div>
+    <script>
+        function openNav(){
+            $('nav').animate({'left':'0px'}, 500);
+        }
+        function closeNav(){
+            $('nav').animate({'left':'-200px'}, 500);
+        }
+        $(function(){
+            $(window).resize(function(){
+                if($(window).width() >= 720){
+                    $('nav').removeAttr('style');   //스크립트로 적용된 css 요소 삭제
+                }
+            });
+        });
+    </script>
+</body>
+</html>

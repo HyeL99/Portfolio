@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* 1280px 미만 작은 데스크탑 버전*/
+@media (max-width: 1199px) {
+    .inner{
+        width: 100%;
+        padding: 0 20px;
+    }
+    main #content section{
+        width: 50%;
+        height: 200px;
+        line-height: 200px;
+    }
+    main .inner {
+        padding: 0;
+    }
+    footer{
+        height: 100px;
+        text-align: center;
+    }
+}
+/* 960px 미만 테블릿 버전*/
+@media (max-width: 959px) {
+    header .inner h1 {
+        font-size: 25px;
+    }
+    header .inner a.sign span {
+        display: none;
+    }
+    header .inner nav ul li a{
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    header .inner nav{
+        margin-left: -150px;
+    }
+}
+/* 720px 미만 모바일 버전*/
+@media (max-width: 719px) {
+    main #content section{
+        width: 100%;
+        height: 300px;
+        line-height: 300px;
+    }
+    header {
+        height: 50px;
+    }
+    header .inner h1 {
+        line-height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        float: none;
+        white-space: nowrap;
+    }
+    header .inner nav{
+        position: fixed;
+        line-height: 40px;
+        width: 200px;
+        left: -200px;
+        top:0;
+        margin-left: 0px;
+        background: #fff;
+        height: 100%;
+        padding: 50px 0 0 20px;
+    }
+    header .inner a.menuBtn{
+        line-height: 50px;
+        display: block;
+    }
+    header .inner a.sign {
+        line-height: 50px;
+    }
+    header .inner nav ul li {
+        float: none;
+    }
+    header .inner nav ul li a{
+        font-size: 18px;
+    }
+    header .inner nav button#menuClose{
+        display: block;
+    }
+    header .inner nav ul::after{
+        display: none;
+    }
+}

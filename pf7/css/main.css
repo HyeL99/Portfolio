@@ -1,0 +1,23 @@
+main #content {
+    display: flex;
+    flex-wrap: wrap;
+} /*div.inner*/
+main #content section {
+    height: 300px;
+    width: 25%;
+    line-height: 300px;
+    font-size: 50px;
+    text-align: center;
+}
+main #content section.con1 {
+    background: lavender;
+}
+main #content section.con2 {
+    background: lavenderblush;
+}
+main #content section.con3 {
+    background: snow;
+}
+main #content section.con4 {
+    background: lightcyan;
+}
