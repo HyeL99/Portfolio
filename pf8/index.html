@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf08.full배경고정 반응형</title>
+    
+    <!-- favicon 삽입 -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/da8c886e38.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <!-- defer : 화면 로딩 후 스크립트 실행 -->
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="inner flex jusSpaBet alnCen">
+                <h1>HyeL's<span> PORTFOLIO</span></h1>
+                <nav>
+                    <ul class="flex fCol">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">RESPONSIVE</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li><a href="#">BOOTSTRAP</a></li>
+                        <li><a href="#">REACT</a></li>
+                        <li><a href="#">RESUME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <button class="trigger" onclick="menuTrigger()"><span class="bar">bar</span><span>open/close</span></button>
+            </div>
+        </header>
+        <div id="title">
+            <div class="inner">
+
+            </div>
+        </div>
+        <main>
+            <div class="inner">
+
+            </div>
+        </main>
+        <footer>
+            <div class="inner">
+
+            </div>
+        </footer>
+        <script>
+            function menuTrigger() {
+                $('.trigger').toggleClass('active');
+                $('nav').slideToggle(400);
+            }
+            $(function(){
+                $(window).resize(function(){
+                    let $winW = $(window).width(); //브라우저의 가로길이를 변수에 저장
+                    if($winW >= 768){
+                        $('nav').removeAttr('style');
+                    } else {
+                        if($('.trigger').hasClass('active')){
+                            $('nav').show();
+                        }
+                    }
+                });
+            });
+        </script>
+</body>
+</html>

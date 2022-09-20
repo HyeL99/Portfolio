@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+#title .inner{
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/img/mainBg.jpg') fixed no-repeat center / cover;
+}   /*fixed를 사용하면 배경이미지가 움직이지 않고 고정된다.*/

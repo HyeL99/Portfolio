@@ -1,0 +1,24 @@
+.flex {
+    display: flex;
+}
+.fCol {
+    flex-direction: column;
+}
+.jusCen {
+    justify-content: center;
+}
+.jusSpaBet {
+    justify-content: space-between;
+}
+.alnCen {
+    align-items: center;
+}
+.alnEnd {
+    align-items: flex-end;
+}
+.jusEnd {
+    justify-content: flex-end;
+}
+.fWrap {
+    flex-wrap: wrap;
+}
