@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* 모바일 상태 기본 */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    height: 40px;
+    background: rgba(246,206,206,0.95);
+}
+header .inner {
+    padding: 0 10px;
+}
+header .inner h1 {
+    font-family: '국립박물관문화재단클래식B','Noto Sans KR', sans-serif;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    color: #fff
+}
+header .inner h1 span {
+    display: none;
+}
+header .inner nav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left:0;
+    width: 100%;
+    color: #fff;
+    background: rgba(246,206,206,0.8);
+}
+header .inner nav ul {
+}
+header .inner nav ul li {
+}
+header .inner nav ul li a {
+    display: block;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 227, 227, 0.5);
+    text-align: center;
+}
+header .inner button.trigger {
+    line-height: 1;
+    background: transparent;
+    padding: 15px 10px 17px;
+    height: 2px;
+    cursor: pointer;
+    border: 0;
+    z-index: 1;
+}
+header .inner button.trigger span.bar{
+    display: block;
+    position: relative;
+    font-size: 0;
+    border-top: 2px solid #fff;
+    width: 30px;
+    height: 2px;
+    line-height: 1;
+    box-sizing: border-box;
+    transition: all 0.4s linear;
+}
+header .inner button.trigger span.bar::before{
+    content:"";
+    display: block;
+    position: absolute;
+    left:0;
+    top: 5px;
+    width: 30px;
+    height: 2px;
+    border-top: 2px solid #fff;
+    box-sizing: border-box;
+    transition: all 0.4s linear;
+}
+header .inner button.trigger span.bar::after{
+    content:"";
+    display: block;
+    position: absolute;
+    left:0;
+    bottom: 7px;
+    width: 30px;
+    height: 2px;
+    border-top: 2px solid #fff;
+    box-sizing: border-box;
+    transition: all 0.4s linear;
+}
+header .inner button.active span.bar::before{
+    content:"";
+    display: block;
+    position: absolute;
+    left:0;
+    top: 7px;
+    width: 30px;
+    height: 2px;
+    border-top: 2px solid #fff;
+    box-sizing: border-box;
+    transform-origin: 50% 50%;
+    transform: translateX(-30px) translateY(-8px) rotate(-45deg);
+}
+header .inner button.active span.bar::after{
+    content:"";
+    display: block;
+    position: absolute;
+    left:0;
+    top: -7px;
+    width: 30px;
+    height: 2px;
+    border-top: 2px solid #fff;
+    box-sizing: border-box;
+    transform-origin: 50% 50%;
+    transform: translateX(-30px) translateY(6px) rotate(45deg);
+}
+header .inner button.trigger span {
+    font-size: 0;
+}
+header .inner button.active span {
+    width:0 !important;
+}
+
