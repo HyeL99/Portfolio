@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* font */
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap');
+
+/* common */
+/* 16px = 1rem, 1px = 0.0625rem */
+html {
+    font-size: 16px;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    letter-spacing: -0.04rem;
+}
+h1{
+    font-family: '국립박물관문화재단클래식B', 'Noto Sans KR', sans-serif;
+}
+
+/* class */
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.inner{
+    width: 1092px;
+    margin: 0 auto;
+}
+
+/* header */
+div.header_container{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    transition: all 0.5s;
+    top:0;
+    left: 0;
+}
+div.header_container.active {
+    left: -250px;
+}
+header {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+header div.inner {
+}
+header div.inner h1 {
+    float: left;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+header div.inner h1 a {
+    display: block;
+    width: 163px;
+    height: 21px;
+    background: url(../assets/img/logo.png) no-repeat center / contain;
+    font-size: 21px;
+    line-height: 1;
+    color: transparent;
+    text-align: center;
+}
+header div.inner button.trigger {
+    display: none;
+    padding: 5px;
+    margin-top: 17px;
+    background: transparent;
+    border: 0;
+}
+header div.inner button.trigger span.iconBar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #801494;
+    font-size: 0;
+    border-radius: 1px;
+}
+
+header div.inner button.trigger span.iconBar:not(:first-child){
+    margin-top: 5px;
+}
+header div.inner div.gnb {
+}
+header div.inner div.gnb div.navbar {
+}
+header div.inner div.gnb div.navbar::before{
+    content:"";
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: 0px;
+    background: rgba(0,0,0,0.7);
+    transition: all 0.3s;
+}
+header div.inner div.gnb div.navbar:hover::before {
+    height: 220px;
+}
+header div.inner div.gnb div.navbar ul.navGnb {
+    margin-left: 163px;
+    text-align: center;
+}
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList {
+    display: inline-block;
+}
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList a {
+    display: block;
+    line-height: 60px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub {
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.3s;
+}
+header div.inner div.gnb div.navbar:hover ul.navGnb li.gnbList ul.gnbSub {
+    height: 220px;
+}
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub li.gnbSubList {
+    margin-top: 1rem;
+}
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub li.gnbSubList a{
+    line-height: 1.5;
+}
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub li.gnbSubList:hover a{
+    color:#c64fdc;
+}
+
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList span.mobile {
+    font-size: 0;
+    background: url('../assets/img/plus.svg') no-repeat center / 20px 20px;
+    display: none;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    position: absolute;
+    right: 20px;
+}
+header div.inner div.gnb div.navbar ul.navGnb li.gnbList:hover span.mobile{
+    transform: rotate(180deg);
+    transition: all 0.5s;;
+}
+
+/* footer */
+footer {
+    color: #b3b3b3;
+    background: #464646;
+}
+footer div.inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+footer div.inner::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+footer div.inner h2 {
+    float: left;
+    vertical-align: top;
+    line-height: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+footer div.inner h2 img {
+}
+footer div.inner ul.address {
+    float: left;
+    vertical-align: top;
+    width: 40%;
+}
+footer div.inner ul.address li {
+    display: inline-block;
+    line-height: 1.5;
+}
+footer div.inner ul.address li a {
+    color: #8b8b8b;
+}
+footer div.inner div.wrap {
+    float: right;
+}
+footer div.inner div.wrap ul.menu {
+}
+footer div.inner div.wrap ul.menu li {
+}
+footer div.inner div.wrap ul.menu li a {
+}
+footer div.inner div.wrap select {
+    max-width: 110px;
+    padding: 0 10px;
+    margin-left: 10px;
+    border-radius: 0px;
+    background-color: #fff;
+}
+footer div.inner div.wrap select option {
+}
+footer span.menuBar{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    box-sizing: border-box;
+    border-left: 1px solid;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+@media (max-width: 1169px) {
+    div.header_container{
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    header div.inner div.gnb {
+        position: fixed;
+        background: #2d2d2d;
+        color: #fff;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        right:-250px;
+        transition: all 0.5s;
+        overflow-y: scroll;
+    }
+    div.header_container.active header div.inner div.gnb {
+        right: 0;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb{
+        margin: 0;
+        text-align: start;
+    }
+    header div.inner div.gnb div.navbar::before {
+        display: none;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList {
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        position: relative;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList > a {
+        pointer-events: none;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub li.gnbSubList {
+        display: none;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList.active {
+        color: #c64fdc;
+        
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList span.mobile{
+        display: block;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList.active span.mobile{
+        background: url('../assets/img/minus.svg') no-repeat center / 20px 20px;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub {
+        height: auto;
+        position: relative;
+        background: #444144;
+        color: #fff;
+    }
+    header div.inner div.gnb div.navbar:hover  ul.navGnb li.gnbList ul.gnbSub{
+        height: auto;
+        transition: auto;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub li.gnbSubList {
+        display: block;
+        margin: 0;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub li.gnbSubList a{
+        line-height: 40px;
+    }
+    header div.inner div.gnb div.navbar ul.navGnb li.gnbList ul.gnbSub li.gnbSubList a br {
+        display: none;
+    }
+    header div.inner button.trigger {
+        display: block;
+        float: right;
+        vertical-align: middle;
+    }
+}
+@media (max-width: 991px) {
+    header div.inner {
+        width: 100%;
+        padding: 0 20px;
+    }
+    footer div.inner div.wrap ul.menu {
+        display: none;
+    }
+    footer div.inner ul.address{
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    footer div.inner {
+        height: 130px;
+        position: relative;
+    }
+    footer div.inner h2 {
+        float: left;
+        line-height: 1;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    footer div.inner ul.address {
+        position: absolute;
+        top: 40px;
+        width: 60%;
+    }
+}

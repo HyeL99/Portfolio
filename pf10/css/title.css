@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+#title{
+    text-align: center;
+}
+#title img{
+    max-width: 100%;
+}
+#title img.mobile {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #title img.pc {
+        display: none;
+    }
+    #title img.mobile {
+        display: block;
+        padding-top: 60px;
+    }
+}

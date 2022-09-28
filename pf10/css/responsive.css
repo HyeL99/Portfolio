@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 큰 데스크탑 상태 기본 */
+/*** 1169px 이하 데스크탑 버전 ***/
+@media (max-width: 1169px) {
+    .inner{
+        width: 952px;
+    }
+}
+/*** 1169px 이하 테블릿 버전 ***/
+@media (max-width: 991px) {
+    .inner{
+        width: 712px;
+    }
+}
+/*** 1169px 이하 모바일 버전 ***/
+@media (max-width: 767px) {
+    .inner{
+        width: 100%;
+        padding: 0 20px;
+    } 
+}

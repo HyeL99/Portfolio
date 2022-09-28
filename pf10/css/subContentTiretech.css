@@ -1,0 +1,88 @@
+.tiretechPage div.inner h2 {
+    background: #eee url('../assets/img/subPage/05.png') no-repeat bottom / contain;
+}
+/* tiretech menu pages css */
+/* 01.html */
+.tiretech .mainInfo {
+    margin-top: 50px;
+}
+.tiretech .mainInfo article{
+    width: 47.5%;
+    margin-top: 40px;
+}
+.tiretech .mainInfo article h4 {
+    font-size: 22px;
+    line-height: 3;
+    position: relative;
+}
+.tiretech .mainImg {
+    margin-top: 50px;
+    text-align: center;
+    row-gap: 50px;
+}
+.tiretech .mainImg article {
+    font-size: 14px;
+    width: 225px;
+    padding: 0 20px;
+    text-align: center;
+}
+.tiretech .mainImg article img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+/* 02.html */
+.infoStore .img01 {
+    display: block;
+}
+.infoStore .img02 {
+    display: none;
+}
+.infoStore .img03 {
+    display: none;
+}
+.infoStore section article {
+    margin-top: 30px;
+}
+.infoStore section article h4{
+    font-size: 22px;
+}
+.infoStore section article p{
+    font-size: 14px;
+}
+.infoStore section article img {
+    width: 100%;
+}
+.infoStore section article ul li {
+    margin-bottom: 30px;
+    width: 50%;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+@media (max-width: 991px) {
+    .infoStore .img01 {
+        display: none;
+    }
+    .infoStore .img02 {
+        display: block;
+    }
+    .infoStore .img03 {
+        display: none;
+    }
+    .infoStore section article ul li {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .tiretech .mainInfo article {
+        width: 100%;
+    }
+    .infoStore .img01 {
+        display: none;
+    }
+    .infoStore .img02 {
+        display: none;
+    }
+    .infoStore .img03 {
+        display: block;
+    }
+}

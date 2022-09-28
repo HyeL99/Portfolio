@@ -1,0 +1,116 @@
+.titlebar {
+    line-height: 3;
+    position: relative;
+}
+.titlebar::before {
+    content:"";
+    position: absolute;
+    left:0;
+    top: 10px;
+    width: 23px;
+    border-bottom: 2px solid #812990;
+}
+
+.subTitle {
+    padding-top: 60px;
+    
+}
+.subTitle div.inner {
+    width: 100%;
+    padding: 0;
+}
+.subTitle div.inner h2 {
+    text-align: center;
+    line-height: 110px;
+    background: #eee url('../assets/img/subPage/01.png') no-repeat bottom / contain;
+    font-size: 48px;
+    font-weight: 500;
+}
+.subTitle div.inner ul {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    color: #636363;
+    column-gap: 20px;
+}
+.subTitle div.inner ul li {
+    position: relative;
+}
+.subTitle div.inner ul li a {
+    display: block;
+    padding: 10px 16px;
+}
+.subTitle div.inner ul li.active a {
+    color: #791e88;
+    font-weight: 700;
+}
+.subTitle div.inner ul li.active::before {
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #791e88;
+    left:0;
+    bottom:-1px;
+}
+.subTitle div.inner ul li.active::after {
+    content:"";
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-top-color: #791e88;
+    left:calc(50% - 5px);
+    bottom: -10px;
+}
+.subTitle div.inner ul li a span.br {
+}
+
+main.subPage {
+}
+main.subPage div.inner {
+    margin: 70px auto 60px;
+}
+main.subPage div.inner div.top {
+}
+main.subPage div.inner div.top h3 {
+    color: #414042;
+    font-size: 34px;
+    line-height: 1;
+}
+main.subPage div.inner div.top ul.social {
+    font-size: 30px;
+}
+main.subPage div.inner div.top ul.social li {
+}
+main.subPage div.inner div.top ul.social li span.bar {
+    display: inline-block;
+    margin: 0 10px;
+    width: 1px;
+    height: 50%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+main.subPage div.inner div.top ul.social li a {
+}
+main.subPage div.inner div.top ul.social li a span {
+    font-size: 0;
+}
+.subPage {
+}
+.subPage .content {
+}
+.subPage .content p {
+    margin: 10px 0;
+    color: #58595b;
+}
+.subPage .content img {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    main.subPage div.inner div.top ul.social li.pc {
+        display: none;
+    }
+    .subTitle div.inner ul {
+        display: none;
+    }
+}
