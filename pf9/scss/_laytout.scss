@@ -1,0 +1,60 @@
+.nav{
+    @include set-box(100%,70px);
+    background-color: $subColor01;
+    position:fixed;
+    left:0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .navList {
+        margin-top: 30px;
+    }
+    .navList,
+    .navMenu {
+        .navBtn{
+            width: 100%;
+            padding: 0.8rem 0;
+            color: $gray02;
+            text-align: center;
+            font-size: 1.2rem;
+            &.active{
+                color: $subColor03;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+}
+.header {
+    margin-top: 20px;
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $subColor03;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background: $subColor02;
+    z-index: 1;
+    .headerTitle{
+    }
+    .headerMenu{
+        button{
+            @include set-box(2.5rem,2.5rem,50%);
+            background-color: transparent;
+            border:0;
+            font-size: 1.2rem;
+            &:hover{
+                background-color: #fff;
+                color: $mainColor;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+}

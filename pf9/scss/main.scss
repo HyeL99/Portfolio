@@ -1,0 +1,9 @@
+// 언더바 생략하고 불러옴
+@import 'mixVariables.scss';    //변수, 믹스인을 제일 처음에
+@import 'reset.scss';
+@import 'laytout.scss';
+@import 'component.scss';
+
+@import 'index.scss';
+@import 'chatList.scss';
+@import 'chat.scss';

@@ -1,0 +1,82 @@
+.loginContainer {
+    width: 100%;
+    height: 100%;
+    background-color: $mainColor;
+}
+.login {
+    height: 100%;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .loginLogo {
+        line-height: 100px;
+        text-align: center;
+        color: transparent;
+        background: {
+            image : url('../img/logo.svg'); //컴파일 된 이후 css파일의 기준으로 작성
+            repeat: no-repeat;
+            position: center;
+            size: auto 100%;
+        };
+        margin-bottom: 30px;
+    }
+    .loginAccount {
+        text-align: center;
+        font-size: 0.8rem;
+        a {
+            color: $gray01;
+        }
+        span.bar {
+            margin: 0 20px;
+            color: $gray02;
+        }
+    }
+}
+.loginForm {
+    width: 240px;
+    margin: 0 auto 100px;
+    font-size: 0.8rem;
+    input {
+        width: 240px;
+        height: 40px;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding: 0 0.5rem;
+        color: $subColor03;
+        &:focus{outline: 0;}
+        &::placeholder {
+            color: $gray02;
+        }
+    }
+    .loginFormId {
+        border-radius: 3px 3px 0 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .loginFormPw {
+        border-top: none;
+        border-radius: 0 0 3px 3px;
+        margin-bottom: 7px;
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+    }
+    .loginFormBtn {
+        border-radius: 3px;
+        background-color: $subColor01;
+        color: $subColor03;
+        margin-bottom: 5px;
+        &:hover{
+            background-color: $subColor03;
+            color: $subColor01;
+        }
+    }
+    .loginFormCheck {
+        width: 0.8rem;
+        height: 0.8rem;
+        padding: 0;
+        // appearance: unset;  //기본 설정이 되어 있는 모양을 다 없애준다.
+    }
+    label {
+        color: $subColor03;
+    }
+}

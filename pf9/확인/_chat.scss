@@ -1,0 +1,28 @@
+.chat { border: 5px solid red;
+  @include set-box(100%); 
+}
+
+.chat_screen { border: 5px solid blue;
+  height:calc(100%  - 140px);
+  overflow:auto;
+  
+  .chat_screen_bar {
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+
+}
+
+
+
+.chat_user {
+  background:PINK;  
+}
+
+.bubble {}
+.bubble_time {}
+
+.chat_form { background: skyblue;
+  height:140px
+}

@@ -1,0 +1,116 @@
+.chat {//border: 5px solid red;
+    @include set-box(100%); 
+}
+
+.chatScreen {
+    //border: 5px solid blue;
+    height:calc(100%  - 120px);
+    overflow:auto;
+    background-color: whitesmoke;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar{
+        display:none;
+    }
+
+    .chatScreenBar {
+        position:sticky;
+        top:0;
+        z-index:10;
+        .chatUser {
+            background:$subColor03;
+            .previewColumn {
+                .previewPic {}
+                .chatNick{
+                    color: rgba(255,255,255,0.9);
+                    font-size: 20px;
+                }
+                .chatNum {
+                    color: rgba(255,255,255,0.5);
+                }
+            }
+        }
+        .backBtn {
+            padding: 1rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: rgba(255,255,255,0.9);
+        }
+    }
+    .bubbleContainer {
+        .preview{
+            .previewColumn {
+                .previewPic {
+
+                }
+            }
+            .bubbleWrap {//border: 5px solid red;
+                display: flex;
+                align-items: flex-end;
+                width: 80%;
+                max-width: 700px;
+
+                .bubbleContent{//border: 5px solid blue;
+                    .previewNick {
+                        color: $subColor03;
+                        width: auto;
+                    }
+                    .bubble {}
+                }
+                .bubbleTime {
+                    font-size: 0.7rem;
+                    white-space: nowrap;
+                    margin-left: 0.5rem;
+                    color: $gray02;
+                }
+            }
+        }
+    }
+}
+
+.chatForm {
+    background: $subColor03;
+    height:120px;
+    padding: 10px;
+    .chatFormField{
+        .chatFormMsg{
+            @include set-box(60px, 100%);
+            resize: none;
+            outline: 0;
+            border: 3px solid $subColor01;
+            border-radius: 5px;
+            padding: 0.5rem;
+            color: $subColor03;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar{
+                display:none;
+            }
+        }
+    }
+    .chatFormUtil{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $subColor01;
+        margin-top: 5px;
+        .chatFormUtilPlugin{
+            padding-left: 5px;
+            i {
+                margin-right: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+        .chatFormUtilSubmit{
+            .chatFormBtn{
+                padding: 10px 20px;
+                background-color: $subColor01;
+                border: 0;
+                border-radius: 5px;
+                color: $subColor03;
+                font-size: 1rem;
+            }
+        }
+    }
+}

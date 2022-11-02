@@ -1,0 +1,40 @@
+.chatList {
+    width: 100%;
+    display: inline-block;
+    background-color: $subColor02;
+    padding: 0.4rem 0rem 0.8rem calc(0rem + 70px);
+    min-height: 100%;
+    .header {
+        .headerTitle{
+        }
+        .headerMenu{
+            button{
+
+            }
+        }
+    }
+
+    .previews{
+        .previewList {
+            .previewWrap {
+                color: $subColor03;
+                &:first-child > .preview,
+                &:hover > .preview {
+                    background-color: $subColor03;
+                    .previewNick {
+                        color : rgba(255,255,255,0.9);
+                        .num {
+                            color : rgba(255,255,255,0.6);
+                        }
+                    }
+                    .previewMsg {
+                        color : rgba(255,255,255,0.7);
+                    }
+                    .previewTime {
+                        color : rgba(255,255,255,0.6);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+$mainColor: #FFC7C7;
+$subColor01: #FFE2E2;
+$subColor02: #F6F6F6;
+$subColor03: #8785A2;
+$gray01: rgb(100, 100, 100);
+$gray02: rgba(100, 100, 100, 0.5);
+
+@mixin set-box($height,$width:100%,$radius:0px) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}

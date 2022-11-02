@@ -1,0 +1,377 @@
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "GongGothicMedium";
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-width: 350px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  color: inherit;
+}
+
+.nav {
+  width: 70px;
+  height: 100%;
+  border-radius: 0px;
+  background-color: #FFE2E2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .navList {
+  margin-top: 30px;
+}
+.nav .navList .navBtn,
+.nav .navMenu .navBtn {
+  width: 100%;
+  padding: 0.8rem 0;
+  color: rgba(100, 100, 100, 0.5);
+  text-align: center;
+  font-size: 1.2rem;
+}
+.nav .navList .navBtn.active,
+.nav .navMenu .navBtn.active {
+  color: #8785A2;
+}
+.nav .navList .navBtn span,
+.nav .navMenu .navBtn span {
+  display: none;
+}
+
+.header {
+  margin-top: 20px;
+  padding: 10px 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8785A2;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background: #F6F6F6;
+  z-index: 1;
+}
+.header .headerMenu button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.2rem;
+}
+.header .headerMenu button:hover {
+  background-color: #fff;
+  color: #FFC7C7;
+}
+.header .headerMenu button span {
+  display: none;
+}
+
+.preview {
+  display: flex;
+  padding: 16px;
+  position: relative;
+}
+.preview .previewColumn .previewPic {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  background-color: #FFC7C7;
+  margin-right: 16px;
+  overflow: hidden;
+}
+.preview .previewColumn .previewPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.preview .previewColumn .previewNick {
+  width: 50vw;
+  font-size: 0.85em;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.preview .previewColumn .previewNick .num {
+  font-size: 0.6rem;
+  color: rgba(100, 100, 100, 0.5);
+  margin-left: 0.5rem;
+}
+.preview .previewColumn .previewMsg {
+  width: 50vw;
+  font-size: 0.82em;
+  color: #919191;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.preview .previewColumn .previewTime {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 0.7em;
+  color: rgba(100, 100, 100, 0.5);
+}
+
+.bubble {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #8785A2;
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.bubble::before {
+  content: "";
+  position: absolute;
+  border: 0.5rem solid #8785A2;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  left: -0.9rem;
+  top: 0.5rem;
+}
+
+.loginContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #FFC7C7;
+}
+
+.login {
+  height: 100%;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login .loginLogo {
+  line-height: 100px;
+  text-align: center;
+  color: transparent;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  margin-bottom: 30px;
+}
+.login .loginAccount {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.login .loginAccount a {
+  color: rgb(100, 100, 100);
+}
+.login .loginAccount span.bar {
+  margin: 0 20px;
+  color: rgba(100, 100, 100, 0.5);
+}
+
+.loginForm {
+  width: 240px;
+  margin: 0 auto 100px;
+  font-size: 0.8rem;
+}
+.loginForm input {
+  width: 240px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.5rem;
+  color: #8785A2;
+}
+.loginForm input:focus {
+  outline: 0;
+}
+.loginForm input::placeholder {
+  color: rgba(100, 100, 100, 0.5);
+}
+.loginForm .loginFormId {
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.loginForm .loginFormPw {
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  margin-bottom: 7px;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+}
+.loginForm .loginFormBtn {
+  border-radius: 3px;
+  background-color: #FFE2E2;
+  color: #8785A2;
+  margin-bottom: 5px;
+}
+.loginForm .loginFormBtn:hover {
+  background-color: #8785A2;
+  color: #FFE2E2;
+}
+.loginForm .loginFormCheck {
+  width: 0.8rem;
+  height: 0.8rem;
+  padding: 0;
+}
+.loginForm label {
+  color: #8785A2;
+}
+
+.chatList {
+  width: 100%;
+  display: inline-block;
+  background-color: #F6F6F6;
+  padding: 0.4rem 0rem 0.8rem calc(0rem + 70px);
+  min-height: 100%;
+}
+.chatList .previews .previewList .previewWrap {
+  color: #8785A2;
+}
+.chatList .previews .previewList .previewWrap:first-child > .preview, .chatList .previews .previewList .previewWrap:hover > .preview {
+  background-color: #8785A2;
+}
+.chatList .previews .previewList .previewWrap:first-child > .preview .previewNick, .chatList .previews .previewList .previewWrap:hover > .preview .previewNick {
+  color: rgba(255, 255, 255, 0.9);
+}
+.chatList .previews .previewList .previewWrap:first-child > .preview .previewNick .num, .chatList .previews .previewList .previewWrap:hover > .preview .previewNick .num {
+  color: rgba(255, 255, 255, 0.6);
+}
+.chatList .previews .previewList .previewWrap:first-child > .preview .previewMsg, .chatList .previews .previewList .previewWrap:hover > .preview .previewMsg {
+  color: rgba(255, 255, 255, 0.7);
+}
+.chatList .previews .previewList .previewWrap:first-child > .preview .previewTime, .chatList .previews .previewList .previewWrap:hover > .preview .previewTime {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.chat {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.chatScreen {
+  height: calc(100% - 120px);
+  overflow: auto;
+  background-color: whitesmoke;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.chatScreen::-webkit-scrollbar {
+  display: none;
+}
+.chatScreen .chatScreenBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.chatScreen .chatScreenBar .chatUser {
+  background: #8785A2;
+}
+.chatScreen .chatScreenBar .chatUser .previewColumn .chatNick {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+}
+.chatScreen .chatScreenBar .chatUser .previewColumn .chatNum {
+  color: rgba(255, 255, 255, 0.5);
+}
+.chatScreen .chatScreenBar .backBtn {
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+.chatScreen .bubbleContainer .preview .bubbleWrap {
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  max-width: 700px;
+}
+.chatScreen .bubbleContainer .preview .bubbleWrap .bubbleContent .previewNick {
+  color: #8785A2;
+  width: auto;
+}
+.chatScreen .bubbleContainer .preview .bubbleWrap .bubbleTime {
+  font-size: 0.7rem;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+  color: rgba(100, 100, 100, 0.5);
+}
+
+.chatForm {
+  background: #8785A2;
+  height: 120px;
+  padding: 10px;
+}
+.chatForm .chatFormField .chatFormMsg {
+  width: 100%;
+  height: 60px;
+  border-radius: 0px;
+  resize: none;
+  outline: 0;
+  border: 3px solid #FFE2E2;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #8785A2;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.chatForm .chatFormField .chatFormMsg::-webkit-scrollbar {
+  display: none;
+}
+.chatForm .chatFormUtil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFE2E2;
+  margin-top: 5px;
+}
+.chatForm .chatFormUtil .chatFormUtilPlugin {
+  padding-left: 5px;
+}
+.chatForm .chatFormUtil .chatFormUtilPlugin i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+.chatForm .chatFormUtil .chatFormUtilSubmit .chatFormBtn {
+  padding: 10px 20px;
+  background-color: #FFE2E2;
+  border: 0;
+  border-radius: 5px;
+  color: #8785A2;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
