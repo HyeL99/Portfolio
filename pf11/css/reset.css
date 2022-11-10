@@ -1,0 +1,23 @@
+a{
+    color: #354463;;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 100%; /*기본크기로 16px*/
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+ul,li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+button {
+    color: inherit;
+    cursor: pointer;
+}

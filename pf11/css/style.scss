@@ -1,0 +1,270 @@
+$screenLarge: "(max-width:1599px)";  //1600 미만
+$screenSemiLarge: "(max-width:1199px)";   //1200 미만
+$screenMedium: "(max-width:899px)";   //900 미만
+$screenSmall: "(max-width:767px)";    //768 미만
+$screenMobile: "(max-width:539px)";    //540 미만
+$gradient: linear-gradient(45deg,#05c6e7,#0353c4);
+
+section::after,
+ul::after {
+  content:"";
+  display: block;
+  clear: both;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 400px;
+  height: 100%;
+  background:$gradient;
+  h1 {
+    font-size: 5rem;
+    position: absolute;
+    left:50px;
+    top:35%;
+    transform: translateY(-50%);
+    letter-spacing: -0.04rem;
+    color:#fff;
+    position: relative;
+    &::before {
+      content:"";
+      position: absolute;
+      width: 45%;
+      left:0;
+      bottom: -0.3em;
+      border-top: 4px solid #fff;
+    }
+    &::after {
+      content:"FrontEnd Gallery";
+      position: absolute;
+      left:0;
+      bottom: -2em;
+      font-size: 0.5em;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+  }
+  .sns {
+    position: absolute;
+    bottom: 100px;
+    right: 0%;
+    width: 400px;
+    text-align: center;
+    li{
+      display: inline-block;
+      margin: 0 1rem;
+      a{
+        color: #fff;
+        font-size: 1.5em;
+        i{
+          font-size: 1.5em;
+          margin-right:0.5rem;
+        }
+      }
+    }
+  }
+  @media #{$screenLarge} {  //1600 미만
+    width: 350px;
+    h1 {
+      left: 20px;
+    }
+    .sns {
+      width: 350px;
+    }
+  }
+  @media #{$screenSemiLarge} {  //1200 미만
+    position: relative;
+    width: 100%;
+    height: 80px;
+    h1{
+      display: inline-block;
+      line-height: 70px;
+      top:0;
+      transform: none;
+      font-size: 3.5rem;
+      &::before {
+        width: 60%;
+        bottom: 1.75rem;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .sns {
+      bottom: 10px;
+      width: auto;
+    }
+  }
+  @media #{$screenMedium} {
+    .sns span{
+      display: none;
+    }
+  }
+  @media #{$screenMobile} {  //1600 미만
+    text-align: center;
+    h1 {
+      line-height: 80px;
+    }
+    .sns {
+      display: none;
+    }
+  }
+}
+main {
+  margin-left: 400px;
+  padding: 2rem;
+  nav {
+    margin-bottom: 1rem;
+    .btns {
+      li{
+        width: 100px;
+        height: 25px;
+        float: right;
+        a{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+          font: {
+            family: 'ELAND_Nice_M',serif;
+            size: 1.5rem;
+          }
+          color: #ccc;
+          text-align: center;
+          line-height: 25px;
+
+          &:hover {
+            background: $gradient;
+            box-shadow: 0 0 10px rgba(0,255,255,0.5);
+            color: #fff;
+          }
+        }
+        &:not(:last-child) {
+          margin-left: 20px;
+        }
+        &.on {
+          a {
+            background: $gradient;
+            box-shadow: 0 0 10px rgba(0,255,255,0.5);
+            color: #fff;
+          }
+        }
+        @media #{$screenMobile} {
+            width: calc((100% - 40px) / 3);
+        }
+      }
+    }
+  }
+  section {
+    article{
+      padding: 1rem;
+      box-sizing: border-box;
+      width: 20%;
+      float: left;
+      div{
+        padding: 1rem;
+        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+        border-radius: 5px;
+        img{
+          width: 100%;
+        }
+        h2{
+          margin: 1rem 0 0.5rem;
+          font: {
+            family: 'ELAND_Nice_M',serif;
+            size: 2rem;
+          }
+          color:#0353c4;
+        }
+        p{
+          color:#05c6e7;
+          font-size: 1.3rem;
+          line-height: 1.2;
+        }
+      }
+      @media #{$screenLarge} {  //1600 미만
+        width: 25%;
+      }
+      @media #{$screenMedium} {  //1200 미만
+        width: calc(100% / 3);
+      }
+      @media #{$screenSmall} {  //1200 미만
+        width: 50%;
+      }
+      @media #{$screenMobile} {  //1200 미만
+        width: 100%;
+      }
+    }
+  }
+  @media #{$screenLarge} {  //1600 미만
+    margin-left: 350px;
+  }
+  @media #{$screenSemiLarge} {  //1200 미만
+    margin-left: 0px;
+  }
+  @media #{$screenMobile} {
+    li {
+      width: calc((100% - 40px) / 3);
+    }
+  }
+}
+
+#popup{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0 0 0  / 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  &.on {
+    display: flex;
+  }
+  div{
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 0.3);
+    position: relative;
+    button {
+      border:0;
+      outline:0;
+      width:10rem;
+      height: 2rem;
+      background: #0353c4;
+      border-radius: 1rem;
+      color: #fff;
+      position: absolute;
+      left: calc(50% - 5rem);
+      bottom: 1rem;
+      z-index: 1;
+    }
+    img{
+      width: auto;
+      height: auto;
+      max-width: 80vw;
+      max-height: 60vh;
+    }
+    h2{
+      margin: 1rem 0 0.5rem;
+      font: {
+        family: 'ELAND_Nice_M',serif;
+        size: 2rem;
+      }
+      color:#0353c4;
+      margin: 10px 0 5px
+    }
+    p{
+      color:#05c6e7;
+      font-size: 1.3rem;
+      line-height: 1.2;
+    }
+  }
+}
