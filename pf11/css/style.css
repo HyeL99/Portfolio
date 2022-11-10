@@ -256,6 +256,7 @@ main section article div p {
 #popup div img {
   width: auto;
   height: auto;
+  margin: 0 auto;
   max-width: 80vw;
   max-height: 60vh;
 }
